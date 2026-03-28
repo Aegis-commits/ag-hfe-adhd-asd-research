@@ -3,11 +3,53 @@ body {
       ADD YOUR CUSTOM STYLING HERE. (INSIDE THE body {...} section.)
       IT WILL TAKE PRECEDENCE OVER THE STYLING IN THE STYLE.CSS FILE.
    ***/
-    //  background-color: white;
-    //  .content {
-    //   font-size: 14px;
-    //  }
-    //  h1 {
-    //   color: black;
-    //  }
+
+    /* ── Mermaid diagrams ── */
+    /* Dark background matching site theme; bright lines for contrast */
+    .mermaid {
+        background-color: #1a1a2e;
+        border-radius: 12px;
+        padding: 20px;
+        overflow-x: auto;
+    }
+
+    /* Make connecting lines bright and thick against dark background */
+    .mermaid .flowchart-link {
+        stroke: #cccccc !important;
+        stroke-width: 2.5px !important;
+    }
+
+    /* Arrowheads */
+    .mermaid .marker {
+        fill: #cccccc !important;
+        stroke: #cccccc !important;
+    }
+
+    /* Dotted/dashed lines (protective/therapeutic) — slightly dimmer */
+    .mermaid .flowchart-link[style*="stroke-dasharray"] {
+        stroke: #88bb88 !important;
+        stroke-width: 2.5px !important;
+    }
+
+    /* Edge labels readable on dark background */
+    .mermaid .edgeLabel {
+        background-color: #1a1a2e !important;
+        color: #e0e0e0 !important;
+    }
+
+    /* Subgraph borders and fills */
+    .mermaid .cluster rect {
+        stroke: #555577 !important;
+        fill: #22223a !important;
+    }
+
+    /* Subgraph titles */
+    .mermaid .cluster-label .nodeLabel {
+        color: #e0e0e0 !important;
+    }
+
+    /* Node text — ensure readable on coloured fills */
+    .mermaid .nodeLabel {
+        font-size: 14px !important;
+    }
 }
