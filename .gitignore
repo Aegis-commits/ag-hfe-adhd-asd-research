@@ -28,6 +28,10 @@ Anthony_Granfield_Health_Results_Dec2025.md
 CLAUDE.md
 .mcp.json
 
+# Domain best-practices and git workflows (internal reference, not research)
+domains/
+git-workflows/
+
 # Digital Garden / Vercel build
 node_modules
 dist
