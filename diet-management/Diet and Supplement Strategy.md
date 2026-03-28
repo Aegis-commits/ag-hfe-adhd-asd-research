@@ -53,10 +53,10 @@ flowchart TD
     MON -.->|adjust| NAC
     MON -.->|adjust| VD
 
-    classDef tier1 fill:#c96,stroke:#633,color:#000
-    classDef tier2 fill:#69a,stroke:#346,color:#000
-    classDef tier3 fill:#6a9,stroke:#364,color:#000
-    classDef monitor fill:#999,stroke:#444,color:#000
+    classDef tier1 fill:#f0b27a,stroke:#ca6f1e,color:#1a1000
+    classDef tier2 fill:#85c1e9,stroke:#2471a3,color:#0a1929
+    classDef tier3 fill:#58d68d,stroke:#1e8449,color:#0a1f12
+    classDef monitor fill:#d5dbdb,stroke:#7f8c8d,color:#1a1a1a
 
     class P,DI,R1 tier1
     class NAC,VD,PRO,R2,R3,R4 tier2

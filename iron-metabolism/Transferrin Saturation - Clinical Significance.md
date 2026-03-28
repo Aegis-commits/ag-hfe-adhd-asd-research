@@ -48,10 +48,10 @@ flowchart TD
     ORGAN --> MRI["Hepatic iron MRI"]
     ORGAN --> MONITOR["3-6 month monitoring"]
 
-    classDef safe fill:#6b8f71,stroke:#4a6b4f,color:#fff
-    classDef caution fill:#c4956a,stroke:#9a7550,color:#fff
-    classDef danger fill:#b06272,stroke:#8a4252,color:#fff
-    classDef action fill:#4a6fa5,stroke:#2d4a7a,color:#fff
+    classDef safe fill:#58d68d,stroke:#1e8449,color:#0a1f12
+    classDef caution fill:#f7dc6f,stroke:#b7950b,color:#1a1400
+    classDef danger fill:#f1948a,stroke:#c0392b,color:#1a0505
+    classDef action fill:#85c1e9,stroke:#2471a3,color:#0a1929
 
     class NORM,SAFE,ROUTINE safe
     class ELEV,THRESH,INVEST,DIET caution

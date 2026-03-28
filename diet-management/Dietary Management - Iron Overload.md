@@ -53,10 +53,10 @@ flowchart TD
     L --> O[Dinner: If Meat, Add Inhibitors]
     L --> P[Snacks: Nuts, Cheese, Eggs]
 
-    classDef inhibitor fill:#6a9,stroke:#364,color:#000
-    classDef enhancer fill:#c96,stroke:#633,color:#000
-    classDef decision fill:#69a,stroke:#346,color:#000
-    classDef safe fill:#9a6,stroke:#463,color:#000
+    classDef inhibitor fill:#58d68d,stroke:#1e8449,color:#0a1f12
+    classDef enhancer fill:#f0b27a,stroke:#ca6f1e,color:#1a1000
+    classDef decision fill:#85c1e9,stroke:#2471a3,color:#0a1929
+    classDef safe fill:#58d68d,stroke:#1e8449,color:#0a1f12
 
     class E,F,G inhibitor
     class I,J enhancer

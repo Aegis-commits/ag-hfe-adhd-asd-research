@@ -59,9 +59,9 @@ flowchart TD
     T --> U[Labile Iron Persists]
     U --> C
 
-    classDef normal fill:#4a7c8f,stroke:#2d4f5c,color:#fff
-    classDef damage fill:#8f4a4a,stroke:#5c2d2d,color:#fff
-    classDef protect fill:#4a8f5c,stroke:#2d5c3f,color:#fff
+    classDef normal fill:#85c1e9,stroke:#2471a3,color:#0a1929
+    classDef damage fill:#f1948a,stroke:#c0392b,color:#1a0505
+    classDef protect fill:#58d68d,stroke:#1e8449,color:#0a1f12
     classDef warn fill:#8f7a4a,stroke:#5c4f2d,color:#fff
 
     class A,B,C,D,E,F,G normal

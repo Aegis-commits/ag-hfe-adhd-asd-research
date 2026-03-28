@@ -51,9 +51,9 @@ flowchart TD
     Q --> R["More Iron Retention"]
     R --> F
 
-    classDef pathological fill:#c44,color:#fff,stroke:#911
-    classDef vulnerable fill:#c80,color:#fff,stroke:#964
-    classDef neutral fill:#58c,color:#fff,stroke:#247
+    classDef pathological fill:#f1948a,stroke:#c0392b,color:#1a0505
+    classDef vulnerable fill:#f5b7b1,stroke:#e74c3c,color:#1a0505
+    classDef neutral fill:#85c1e9,stroke:#2471a3,color:#0a1929
 
     class A,B,G,H,O,P,Q,R pathological
     class J,K,L vulnerable

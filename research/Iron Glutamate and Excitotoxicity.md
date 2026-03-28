@@ -48,9 +48,9 @@ flowchart TD
     N -.-> P["Bypasses System Xc-"]
     P -.-> Q["Reduced Glutamate Release"]
 
-    classDef pathological fill:#c44,color:#fff,stroke:#911
-    classDef protective fill:#4a8,color:#fff,stroke:#276
-    classDef neutral fill:#58c,color:#fff,stroke:#247
+    classDef pathological fill:#f1948a,stroke:#c0392b,color:#1a0505
+    classDef protective fill:#58d68d,stroke:#1e8449,color:#0a1f12
+    classDef neutral fill:#85c1e9,stroke:#2471a3,color:#0a1929
 
     class A,B,E,H,I,J,K,L,M pathological
     class F,G,N,O,P,Q protective

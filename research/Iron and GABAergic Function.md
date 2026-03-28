@@ -61,10 +61,10 @@ flowchart TD
     T --> V[ADHD Symptoms]
     T --> W[Sensory Overload]
 
-    classDef normal fill:#4a7c8f,stroke:#2d4f5c,color:#fff
-    classDef damage fill:#8f4a4a,stroke:#5c2d2d,color:#fff
-    classDef outcome fill:#6b4a8f,stroke:#3f2d5c,color:#fff
-    classDef gaba fill:#4a8f5c,stroke:#2d5c3f,color:#fff
+    classDef normal fill:#85c1e9,stroke:#2471a3,color:#0a1929
+    classDef damage fill:#f1948a,stroke:#c0392b,color:#1a0505
+    classDef outcome fill:#f7dc6f,stroke:#b7950b,color:#1a1400
+    classDef gaba fill:#58d68d,stroke:#1e8449,color:#0a1f12
 
     class A,B,C,D,E,F,G,H normal
     class I,J,K gaba

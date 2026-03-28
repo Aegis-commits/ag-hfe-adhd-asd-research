@@ -44,10 +44,10 @@ flowchart TD
     G --> M[Oxidative Stress]
     M --> N[Neuronal Damage]
 
-    classDef pathway fill:#4a7c8a,stroke:#2d4f5a,color:#fff
-    classDef hfe fill:#8a5c4a,stroke:#5a3d2d,color:#fff
-    classDef outcome fill:#6b6b6b,stroke:#444,color:#fff
-    classDef deficit fill:#7a6a8a,stroke:#4d3f5a,color:#fff
+    classDef pathway fill:#85c1e9,stroke:#2471a3,color:#0a1929
+    classDef hfe fill:#d2b4de,stroke:#7d3c98,color:#1a0422
+    classDef outcome fill:#f7dc6f,stroke:#b7950b,color:#1a1400
+    classDef deficit fill:#aab7b8,stroke:#5d6d7e,color:#1a1a2e
 
     class A,B,C,D pathway
     class E,F,G,H hfe

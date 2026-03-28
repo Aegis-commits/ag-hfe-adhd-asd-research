@@ -97,7 +97,7 @@ All notes include inline citations with PMIDs linking to PubMed. Key journals re
 
 ## Entry Points
 
-- **[Health Research MOC](https://ag-hfe-adhd-asd-research.vercel.app/)** — main index with pathway diagrams
+- **[Health Research MOC](https://research.principal-ms.co.uk/)** — main index with pathway diagrams
 - **Action Items and Monitoring Plan** — clinical next steps
 - **Diet and Supplement Strategy** — current protocol with evidence ratings
 - **Research Avenues Tracker** — all 70 tracked research leads

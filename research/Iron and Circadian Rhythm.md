@@ -79,9 +79,9 @@ flowchart TD
     T --> U[ADHD Circadian Dysfunction]
     T --> V[ASD Sleep Disruption]
 
-    classDef clock fill:#4a7c8f,stroke:#2d4f5c,color:#fff
-    classDef damage fill:#8f4a4a,stroke:#5c2d2d,color:#fff
-    classDef outcome fill:#6b4a8f,stroke:#3f2d5c,color:#fff
+    classDef clock fill:#aed6f1,stroke:#2980b9,color:#0a1929
+    classDef damage fill:#f1948a,stroke:#c0392b,color:#1a0505
+    classDef outcome fill:#f7dc6f,stroke:#b7950b,color:#1a1400
 
     class A,B,C,D,E,F,G,H,I,J,K clock
     class L,M,N,O,P,Q,R,S damage

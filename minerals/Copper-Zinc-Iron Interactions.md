@@ -58,11 +58,11 @@ flowchart TD
     ZnAbs --> LowZn
     IronTrapping --> IO
 
-    classDef iron fill:#c96,stroke:#633,color:#000
-    classDef copper fill:#69a,stroke:#346,color:#000
-    classDef zinc fill:#6a9,stroke:#364,color:#000
-    classDef outcome fill:#966,stroke:#633,color:#000
-    classDef transporter fill:#999,stroke:#444,color:#000
+    classDef iron fill:#f1948a,stroke:#c0392b,color:#1a0505
+    classDef copper fill:#85c1e9,stroke:#2471a3,color:#0a1929
+    classDef zinc fill:#58d68d,stroke:#1e8449,color:#0a1f12
+    classDef outcome fill:#f7dc6f,stroke:#b7950b,color:#1a1400
+    classDef transporter fill:#d5dbdb,stroke:#7f8c8d,color:#1a1a1a
 
     class Fe,IO,IronTrapping iron
     class Cu,CuAbs,LowCu,LowCp,LowDBH copper

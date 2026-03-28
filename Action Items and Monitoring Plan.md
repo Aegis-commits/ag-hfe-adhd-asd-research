@@ -54,10 +54,10 @@ flowchart TD
     D2 -->|Ferritin 50-100| MAINT[Maintenance Phase]
     D2 -->|Still elevated| PHB
 
-    classDef immediate fill:#c96,stroke:#633,color:#000
-    classDef shortterm fill:#69a,stroke:#346,color:#000
-    classDef ongoing fill:#6a9,stroke:#364,color:#000
-    classDef gate fill:#999,stroke:#444,color:#000
+    classDef immediate fill:#f0b27a,stroke:#ca6f1e,color:#1a1000
+    classDef shortterm fill:#85c1e9,stroke:#2471a3,color:#0a1929
+    classDef ongoing fill:#58d68d,stroke:#1e8449,color:#0a1f12
+    classDef gate fill:#d5dbdb,stroke:#7f8c8d,color:#1a1a1a
 
     class GP,PHB,MRI,GENE immediate
     class ENDO,PHARM,XRAY,VITD shortterm

@@ -55,10 +55,10 @@ flowchart TD
     H --> P
     K --> P
 
-    classDef protective fill:#4a8,color:#fff,stroke:#276
-    classDef mechanism fill:#58c,color:#fff,stroke:#247
-    classDef evidence fill:#7a5,color:#fff,stroke:#463
-    classDef outcome fill:#396,color:#fff,stroke:#274
+    classDef protective fill:#58d68d,stroke:#1e8449,color:#0a1f12
+    classDef mechanism fill:#85c1e9,stroke:#2471a3,color:#0a1929
+    classDef evidence fill:#58d68d,stroke:#1e8449,color:#0a1f12
+    classDef outcome fill:#f7dc6f,stroke:#b7950b,color:#1a1400
 
     class A protective
     class B,C,D,E,G,I mechanism

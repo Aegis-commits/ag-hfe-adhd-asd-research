@@ -57,10 +57,10 @@ flowchart TD
 
     P[Phlebotomy] -.-> A
 
-    classDef iron fill:#8a5c4a,stroke:#5a3d2d,color:#fff
+    classDef iron fill:#f1948a,stroke:#c0392b,color:#1a0505
     classDef gut fill:#4a7c8a,stroke:#2d4f5a,color:#fff
-    classDef pathway fill:#7a6a8a,stroke:#4d3f5a,color:#fff
-    classDef outcome fill:#6b6b6b,stroke:#444,color:#fff
+    classDef pathway fill:#85c1e9,stroke:#2471a3,color:#0a1929
+    classDef outcome fill:#f7dc6f,stroke:#b7950b,color:#1a1400
     classDef vagus fill:#5a7a5a,stroke:#3a4d3a,color:#fff
     classDef therapy fill:#4a8a6a,stroke:#2d5a42,color:#fff
 

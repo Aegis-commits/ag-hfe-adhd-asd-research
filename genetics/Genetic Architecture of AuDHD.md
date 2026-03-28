@@ -74,9 +74,9 @@ flowchart TD
     GL --> ASD
     FE --> ADHD
 
-    classDef locus fill:#4a6fa5,stroke:#2d4a7a,color:#fff
-    classDef pathway fill:#6b8f71,stroke:#4a6b4f,color:#fff
-    classDef pheno fill:#b07d62,stroke:#8a5d42,color:#fff
+    classDef locus fill:#85c1e9,stroke:#2471a3,color:#0a1929
+    classDef pathway fill:#85c1e9,stroke:#2471a3,color:#0a1929
+    classDef pheno fill:#f7dc6f,stroke:#b7950b,color:#1a1400
 
     class COMT,MTHFR,SLC6A3,HFE,SLC6A4,SAPAP3 locus
     class DA,SE,GL,FE,ME pathway

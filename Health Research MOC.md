@@ -28,6 +28,15 @@ permalink: health-research-moc
 
 ---
 
+> [!abstract]- Quick Navigation
+> **Lab:** [[Blood Results - March 2026]] | [[Blood Results - December 2025]]
+> **Genetics:** [[HFE Compound Heterozygosity]] | [[HFE Compound Het - Disease Associations Beyond Iron]] | [[Genetic Architecture of AuDHD]]
+> **Iron:** [[Transferrin Saturation - Clinical Significance]] | [[Iron Overload and NTBI]] | [[Tryptophan-Kynurenine Pathway]] | [[research/Ferroptosis and Neuronal Iron|Ferroptosis]]
+> **Neuro:** [[Iron-Dopamine-ADHD Axis]] | [[Trichotillomania and Neurodevelopmental Links]] | [[Late-Diagnosed Autism - Distinct Profile]] | [[Interoception in AuDHD - Research Review|Interoception]]
+> **Sleep:** [[research/Poor Sleep and AuDHD-HFE Interactions|Sleep-HFE Interactions]] | [[research/Sleep Intervention Protocols for AuDHD Adults|Sleep Protocols]]
+> **Clinical:** [[Action Items and Monitoring Plan]] | [[Diet and Supplement Strategy]] | [[Dietary Management - Iron Overload]]
+> **Tracking:** [[research/Research Avenues Tracker]] | [[research/UK Testing Guide - Pharmacogenomics and Endocrine|UK Testing Guide]]
+
 ## Lab Results
 - [[Blood Results - December 2025]] — comprehensive health assessment: ferritin 738, low folate, thyroid/HbA1c normal, RHR 88bpm, body composition
 - [[Blood Results - March 2026]] — iron studies + minerals: TSAT 60%, ferritin 380 (↓48%), low-normal copper/zinc, HFE confirmed
@@ -135,9 +144,9 @@ The following findings were verified against PubMed and OpenAlex on 2026-03-22, 
 
 ```mermaid
 flowchart LR
-    classDef gen fill:#e8daef,stroke:#7d3c98,color:#2c0735
-    classDef iron fill:#fadbd8,stroke:#c0392b,color:#4a0e0e
-    classDef out fill:#f9e79f,stroke:#f39c12,color:#4a3000
+    classDef gen fill:#d2b4de,stroke:#7d3c98,color:#1a0422
+    classDef iron fill:#f1948a,stroke:#c0392b,color:#1a0505
+    classDef out fill:#f7dc6f,stroke:#b7950b,color:#1a1400
 
     A[HFE C282Y / H63D]:::gen --> B[Iron Overload]:::iron
     B --> C[NTBI / Oxidative Stress]:::iron
@@ -179,9 +188,9 @@ flowchart LR
 
 ```mermaid
 flowchart TD
-    classDef sleep fill:#d6eaf8,stroke:#2980b9,color:#0a2740
-    classDef out fill:#f9e79f,stroke:#f39c12,color:#4a3000
-    classDef feed fill:#fadbd8,stroke:#c0392b,color:#4a0e0e
+    classDef sleep fill:#85c1e9,stroke:#2471a3,color:#0a1929
+    classDef out fill:#f7dc6f,stroke:#b7950b,color:#1a1400
+    classDef feed fill:#f1948a,stroke:#c0392b,color:#1a0505
 
     R[Poor Sleep]:::sleep
 
@@ -217,9 +226,9 @@ flowchart TD
 
 ```mermaid
 flowchart LR
-    classDef protect fill:#a9dfbf,stroke:#1e8449,color:#0a2f14
-    classDef med fill:#fdebd0,stroke:#e67e22,color:#4a2600
-    classDef target fill:#fadbd8,stroke:#c0392b,color:#4a0e0e
+    classDef protect fill:#58d68d,stroke:#1e8449,color:#0a1f12
+    classDef med fill:#f0b27a,stroke:#ca6f1e,color:#1a1000
+    classDef target fill:#f1948a,stroke:#c0392b,color:#1a0505
 
     subgraph TREAT ["Treatment"]
         M[Phlebotomy]:::protect

@@ -46,9 +46,9 @@ flowchart TD
     J[MCP 2nd/3rd Joints] --- K[Sentinel Sign]
     F --> J
 
-    classDef risk fill:#c96,stroke:#633,color:#000
-    classDef mechanism fill:#69a,stroke:#346,color:#000
-    classDef outcome fill:#966,stroke:#633,color:#000
+    classDef risk fill:#f1948a,stroke:#c0392b,color:#1a0505
+    classDef mechanism fill:#85c1e9,stroke:#2471a3,color:#0a1929
+    classDef outcome fill:#f7dc6f,stroke:#b7950b,color:#1a1400
     classDef sentinel fill:#6a9,stroke:#364,color:#000
 
     class H,I risk

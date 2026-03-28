@@ -48,10 +48,10 @@ flowchart TD
     G --> L[Cognitive Effects]
     J --> L
 
-    classDef hfe fill:#8a5c4a,stroke:#5a3d2d,color:#fff
-    classDef region fill:#4a7c8a,stroke:#2d4f5a,color:#fff
-    classDef effect fill:#7a6a8a,stroke:#4d3f5a,color:#fff
-    classDef outcome fill:#6b6b6b,stroke:#444,color:#fff
+    classDef hfe fill:#d2b4de,stroke:#7d3c98,color:#1a0422
+    classDef region fill:#85c1e9,stroke:#2471a3,color:#0a1929
+    classDef effect fill:#d7bde2,stroke:#8e44ad,color:#1a0422
+    classDef outcome fill:#f7dc6f,stroke:#b7950b,color:#1a1400
 
     class A,B hfe
     class C,D,E region

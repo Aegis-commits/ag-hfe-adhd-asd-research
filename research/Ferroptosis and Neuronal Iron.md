@@ -51,10 +51,10 @@ flowchart TD
     P --> Q["Further Iron Dysregulation"]
     Q --> A
 
-    classDef pathological fill:#c44,color:#fff,stroke:#911
-    classDef protective fill:#4a8,color:#fff,stroke:#276
-    classDef neutral fill:#58c,color:#fff,stroke:#247
-    classDef outcome fill:#888,color:#fff,stroke:#555
+    classDef pathological fill:#f1948a,stroke:#c0392b,color:#1a0505
+    classDef protective fill:#58d68d,stroke:#1e8449,color:#0a1f12
+    classDef neutral fill:#85c1e9,stroke:#2471a3,color:#0a1929
+    classDef outcome fill:#f7dc6f,stroke:#b7950b,color:#1a1400
 
     class A,B,C,D,H,I,O,P,Q pathological
     class F,G,M protective

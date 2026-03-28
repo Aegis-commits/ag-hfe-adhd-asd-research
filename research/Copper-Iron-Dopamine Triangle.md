@@ -52,8 +52,8 @@ flowchart LR
 
     DBH_IMPAIR -.->|"Blocks conversion"| DBH
 
-    classDef enzyme fill:#4a6a4a,stroke:#333,color:#fff
-    classDef molecule fill:#2a5a8a,stroke:#333,color:#fff
+    classDef enzyme fill:#58d68d,stroke:#1e8449,color:#0a1f12
+    classDef molecule fill:#85c1e9,stroke:#2471a3,color:#0a1929
     classDef disruption fill:#8b0000,stroke:#333,color:#fff
 
     class TH,DDC,DBH enzyme

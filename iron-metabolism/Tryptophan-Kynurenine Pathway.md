@@ -34,9 +34,9 @@ When inflammation is present, the enzyme **indoleamine 2,3-dioxygenase (IDO)** i
 
 ```mermaid
 flowchart TD
-    classDef source fill:#f9f,stroke:#333,color:#000
-    classDef protect fill:#9f9,stroke:#333,color:#000
-    classDef danger fill:#f99,stroke:#333,color:#000
+    classDef source fill:#d2b4de,stroke:#7d3c98,color:#1a0422
+    classDef protect fill:#58d68d,stroke:#1e8449,color:#0a1f12
+    classDef danger fill:#f1948a,stroke:#c0392b,color:#1a0505
 
     A[Tryptophan]:::source -->|IDO activated by inflammation| B[Kynurenine]
     A -->|Tryptophan hydroxylase| C[5-HTP then Serotonin]:::protect

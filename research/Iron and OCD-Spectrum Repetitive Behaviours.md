@@ -56,10 +56,10 @@ flowchart TD
     R -.->|Protective| J
     S -.->|Protective| L
 
-    classDef circuit fill:#4a7c8f,stroke:#2d4f5c,color:#fff
-    classDef damage fill:#8f4a4a,stroke:#5c2d2d,color:#fff
-    classDef outcome fill:#6b4a8f,stroke:#3f2d5c,color:#fff
-    classDef protect fill:#4a8f5c,stroke:#2d5c3f,color:#fff
+    classDef circuit fill:#85c1e9,stroke:#2471a3,color:#0a1929
+    classDef damage fill:#f1948a,stroke:#c0392b,color:#1a0505
+    classDef outcome fill:#f7dc6f,stroke:#b7950b,color:#1a1400
+    classDef protect fill:#58d68d,stroke:#1e8449,color:#0a1f12
 
     class A,B,C,D circuit
     class E,F,G,H,I,J,K,L damage

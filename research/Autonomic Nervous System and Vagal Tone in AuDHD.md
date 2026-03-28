@@ -67,10 +67,10 @@ flowchart TD
     R[Slow Breathing 6/min] -.-> J
     S[Cold-Water Face Immersion] -.-> J
 
-    classDef condition fill:#4a7c8f,stroke:#2d4f5c,color:#fff
-    classDef burden fill:#8f7a4a,stroke:#5c4f2d,color:#fff
-    classDef outcome fill:#8f4a4a,stroke:#5c2d2d,color:#fff
-    classDef protect fill:#4a8f5c,stroke:#2d5c3f,color:#fff
+    classDef condition fill:#85c1e9,stroke:#2471a3,color:#0a1929
+    classDef burden fill:#f5b7b1,stroke:#e74c3c,color:#1a0505
+    classDef outcome fill:#f7dc6f,stroke:#b7950b,color:#1a1400
+    classDef protect fill:#58d68d,stroke:#1e8449,color:#0a1f12
 
     class A,B,C,D,E,F,G,H condition
     class I,J burden
