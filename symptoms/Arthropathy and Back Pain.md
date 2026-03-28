@@ -40,8 +40,8 @@ flowchart TD
     B --> G[Synovial ROS Production]
     G --> C
 
-    H[C282Y Homozygote] -->|high risk| A
-    I[C282Y/H63D Compound Het] -->|moderate risk| A
+    H[C282Y Homozygote - High Risk] --> A
+    I[C282Y/H63D Compound Het - Moderate Risk] --> A
 
     J[MCP 2nd/3rd Joints] --- K[Sentinel Sign]
     F --> J

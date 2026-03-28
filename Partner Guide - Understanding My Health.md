@@ -80,7 +80,7 @@ Hair pulling isn't a habit I can just stop. It's driven by brain chemistry:
 - **Poor interoception** — I can't detect the building tension in my body until it's overwhelming, and pulling is the only release my nervous system finds
 - **Understimulation** — when my ADHD brain is bored or under-engaged, pulling provides sensory input
 
-Shaming or policing the pulling makes it worse. It's a symptom of overload, not a failure of willpower.
+The pulling is a symptom of neurological overload, not a failure of willpower. It responds to reducing the underlying pressure, not to willpower or attention.
 
 ---
 
@@ -101,20 +101,18 @@ This is why sleep interventions are a top priority in my treatment plan.
 
 ---
 
-## Why I'm So Tired
+## Why the Fatigue Is So Severe
 
-My fatigue has at least six contributing causes, all happening simultaneously:
+This is probably the hardest part to understand from the outside. The fatigue isn't just "being tired" — it's the result of multiple biological systems being under strain at the same time:
 
-1. **Iron toxicity** — free radicals from excess iron damage my cells' energy factories
-2. **Low testosterone** — from iron deposits in my pituitary gland
-3. **37 years of masking** — constantly performing neurotypicality is exhausting
-4. **Poor sleep** — see above
-5. **Low copper and zinc** — iron overload suppresses these essential minerals
-6. **Dopamine dysfunction** — the iron disrupts the very system my ADHD medication is trying to fix
+1. **Iron toxicity** — excess iron creates free radicals that damage my cells' energy production
+2. **Hormonal impact** — iron deposits in the pituitary gland may be affecting testosterone and other hormones
+3. **The masking debt** — 37 years of unconsciously performing neurotypicality has a cumulative cost
+4. **Sleep disruption** — see above
+5. **Mineral depletion** — iron overload suppresses copper and zinc, both needed for energy metabolism
+6. **Dopamine dysfunction** — iron disrupts the very system my ADHD medication is trying to support
 
-**It's not laziness. My body is genuinely running on depleted resources.**
-
-When I crash after a normal day, it's because that "normal day" cost me three times the energy it would cost someone without these conditions.
+When I crash after what looks like a normal day, it's because that day genuinely cost me more energy than it would cost most people. Treatment is aimed at reducing these drivers one by one.
 
 ---
 
@@ -152,37 +150,41 @@ When I crash after a normal day, it's because that "normal day" cost me three ti
 
 ---
 
-## How You Can Help
+## Things That Help — and Things That Don't
 
-### What Helps Most
+I know none of this is easy to navigate. These notes aren't a criticism of anything you've done — they're my best attempt to explain what's going on inside my head and body so we can work with it together.
 
-- **Believe the fatigue.** When I say I'm exhausted, I'm not exaggerating. Rest is medicine.
-- **Don't police the hair pulling.** Shame makes it worse. If I'm pulling more, it means I'm overloaded — ask what's wrong, not why I'm pulling.
-- **Protect sleep together.** Consistent bedtimes, dark bedroom, minimal screens before bed. This is the single biggest lever for improving everything.
-- **Reduce unnecessary demands when I'm depleted.** If I've had a socially intense day, I may need to withdraw. That's not rejection — it's recovery.
-- **Help with meals during appetite suppression.** Elvanse kills my appetite. Having food available that I actually want to eat, especially calorie-dense options (nuts, avocado, full-fat dairy), makes a real difference. Reminders to eat help too.
+### Things That Make a Big Difference
 
-### What Doesn't Help
+- **Trusting that the tiredness is real.** I know it can look like I'm fine, or that I should have more energy than I do. The fatigue has real biological causes, and rest genuinely is part of managing it.
+- **Letting the hair pulling be.** I know it's hard to watch. But the pulling is a pressure valve — it gets worse when I'm overloaded, and drawing attention to it adds shame on top of whatever's already overwhelming me. If you notice it increasing, it's a sign I need less on my plate, not a conversation about the pulling itself.
+- **Sleep as a team project.** Consistent bedtimes, a dark and quiet bedroom, winding down together — this is genuinely the single biggest thing that improves everything else. It helps me, and honestly it's good for both of us.
+- **Space after intense days.** If I've been socialising or managing a demanding situation, I may need to go quiet for a while. It's not about wanting to be away from you — it's that my nervous system needs time to recover.
+- **Food when my appetite disappears.** Elvanse suppresses my appetite heavily. Having easy, calorie-dense food around (nuts, avocado, full-fat dairy, things I actually like) helps a lot. A gentle nudge to eat is welcome — I sometimes genuinely don't notice I'm hungry.
 
-- "Just try harder" — executive dysfunction means I literally cannot make myself do things sometimes, despite wanting to
-- "Everyone gets tired" — my fatigue has six simultaneous biological causes. It's qualitatively different
-- "Can't you just stop pulling?" — no. The urge is neurological, not behavioural
-- "You seem fine" — masking means I can look fine while falling apart internally. Judging by appearance misses everything
-- "It's not that loud/bright/etc" — sensory experience is genuinely different for autistic people. My threshold is lower, and that's real
+### Things That Feel Harder Than You'd Expect
 
-### Signs I'm Heading Toward Burnout
+These are well-meaning things that most people would say — they just don't land the way they're intended with these conditions:
 
-Watch for these — I may not recognise them myself (poor interoception):
+- **"Just try harder"** — I want to. Executive dysfunction means there's a gap between wanting to do something and being able to start it. It's not motivation, it's neurology.
+- **"Everyone gets tired"** — I understand why this feels like perspective, but my fatigue has six simultaneous biological drivers. It's a different kind of tired.
+- **"Can you just stop pulling?"** — If I could, I would have by now. The urge is neurological, not a choice.
+- **"You seem fine though"** — Masking is what I've done for 37 years. Looking fine and being fine are completely separate things for me.
+- **"It's not that loud"** — Sensory experience is genuinely different for autistic people. The sound or light really is that intense for me, even if it isn't for you.
 
-- Increased hair pulling
-- Withdrawing from conversation
-- Forgetting basic tasks I normally handle
-- Irritability that seems disproportionate
-- Physical exhaustion after seemingly small activities
-- Difficulty making any decisions, even simple ones
-- Stimming more (fidgeting, pacing, rocking)
+### Early Warning Signs
 
-When you notice these, the most helpful thing is to **reduce demands, offer quiet, and not take it personally.**
+I'm not always good at recognising when I'm heading toward burnout (poor interoception is part of autism). You might notice these before I do:
+
+- More hair pulling than usual
+- Going quiet or withdrawing from conversation
+- Forgetting things I'd normally handle fine
+- Reacting strongly to small things
+- Exhaustion after seemingly minor activities
+- Struggling to make even simple decisions
+- More fidgeting, pacing, or rocking
+
+If you spot these, the most helpful response is simply to take things off my plate where you can, offer some quiet time, and know it's not about you. It passes.
 
 ---
 

@@ -36,8 +36,8 @@ You reduced ferritin from ~700 to 380 ug/L through dietary changes alone. That i
 ```mermaid
 flowchart TD
     A[Plan a Meal] --> B{Contains Heme Iron?}
-    B -->|Yes: red meat, fish| C[Pair with Inhibitors]
-    B -->|No: plant-based, eggs| D[Lower Risk Meal]
+    B -->|Yes| C[Pair with Inhibitors - red meat, fish]
+    B -->|No| D[Lower Risk Meal - plant-based, eggs]
 
     C --> E[Tea or Coffee with Meal]
     C --> F[Add Dairy / Calcium]

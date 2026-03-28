@@ -145,42 +145,30 @@ The following findings were verified against PubMed and OpenAlex on 2026-03-22, 
 > **Colour key:** 🟣 Genetics | 🔴 Iron pathway / mechanism | 🟡 Symptom endpoint
 
 ```mermaid
-flowchart LR
+flowchart TD
     classDef gen fill:#d2b4de,stroke:#7d3c98,color:#1a0422
     classDef iron fill:#f1948a,stroke:#c0392b,color:#1a0505
     classDef out fill:#f7dc6f,stroke:#b7950b,color:#1a1400
 
     A[HFE C282Y / H63D]:::gen --> B[Iron Overload]:::iron
-    B --> C[NTBI / Oxidative Stress]:::iron
-    B --> D[Suppressed Cu / Zn]:::iron
+    B --> C[NTBI + Oxidative Stress]:::iron
     B --> I[Brain Iron]:::iron
     B --> N[Gut Dysbiosis]:::iron
-    B --> AW[Pituitary Iron]:::iron
 
-    C --> E[Fatigue]:::out
-    C --> F[Joint Damage]:::out
+    C --> E[Fatigue + Joint Damage]:::out
     C --> GSH[GSH Depletion]:::iron
-    GSH --> FPT[Ferroptosis Risk]:::out
+    GSH --> FPT[Ferroptosis]:::out
     GSH --> GLU[Glutamate Excess]:::out
 
-    D --> DBH[Impaired DBH]:::iron
-    D --> ZN[Low Synaptic Zinc]:::iron
-    DBH --> ADHD[ADHD Symptoms]:::out
-    ZN --> ASD[Autism Symptoms]:::out
+    I --> ADHD[ADHD Symptoms]:::out
+    I --> TTM[Trichotillomania]:::out
+    I --> ASD[Autism Symptoms]:::out
 
-    I --> BG[Basal Ganglia Disruption]:::iron
-    I --> MY[Impaired Myelination]:::iron
-    I --> INS[Insula Iron Deposition]:::iron
-    BG --> TTM[Trichotillomania]:::out
-    MY --> ADHD
-    INS --> INT[Low Interoception]:::out
-
-    N --> IDO[IDO Activation]:::iron
-    IDO --> KYN[Kynurenine / Serotonin]:::iron
+    N --> KYN[Kynurenine Shunt]:::iron
     KYN --> TTM
     KYN --> SLP[Poor Sleep]:::out
 
-    AW --> TEST[Low Testosterone]:::out
+    B --> TEST[Low Testosterone]:::out
 ```
 
 ### 2. Sleep as Central Amplifier
@@ -199,26 +187,25 @@ flowchart TD
     R --> AH[Low Glymphatic Clearance]:::sleep
     R --> AI[Gut Dysbiosis]:::sleep
     R --> AJ[Low Executive Function]:::sleep
-    R --> AK[DA Receptor Downregulation]:::sleep
+    R --> AK[DA Downregulation]:::sleep
     R --> AL[Sensory Amplification]:::sleep
-    R --> AM[High Cortisol / HPA]:::sleep
+    R --> AM[High Cortisol]:::sleep
     R --> FPT[Ferroptosis Acceleration]:::sleep
 
-    AH -->|iron accumulates| BI[Brain Iron]:::feed
-    AI -->|inflammation| IDO[IDO Activation]:::feed
-    AM -->|inflammation| IDO
+    AH --> BI[Brain Iron]:::feed
+    AI --> IDO[IDO Activation]:::feed
+    AM --> IDO
     AJ --> ADHD[ADHD Symptoms]:::out
     AJ --> TTM[Trichotillomania]:::out
     AK --> ADHD
     AL --> ASD[Autism Symptoms]:::out
 
-    %% What drives poor sleep
-    ADHD -->|hyperarousal| R
-    ASD -->|sensory| R
-    MASK[Masking Cost]:::out -->|burnout| R
+    ADHD --> R
+    ASD --> R
+    MASK[Masking Cost]:::out --> R
     HYP[Internal Hyperactivity]:::out --> R
-    ELV[Elvanse]:::out -->|stimulant| R
-    AL -.->|sensory loop| R
+    ELV[Elvanse]:::out --> R
+    AL -.-> R
 ```
 
 ### 3. Interventions and Targets

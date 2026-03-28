@@ -55,7 +55,7 @@ flowchart TD
     O -.-> R[Iron Sequestration]
     P -.-> S[Iron Export]
 
-    M -->|Impaired in ASD| T[Failed Compensation]
+    M -->|No| T[Failed Compensation - Impaired in ASD]
     T --> U[Labile Iron Persists]
     U --> C
 

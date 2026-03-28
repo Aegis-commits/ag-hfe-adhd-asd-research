@@ -30,14 +30,14 @@ permalink: minerals/copper-zinc-iron-interactions
 flowchart TD
     subgraph Absorption
         DMT1[DMT1 Transporter]
-        Fe[Iron Fe2+] -->|competes| DMT1
-        Cu[Copper Cu2+] -->|competes| DMT1
-        Zn[Zinc Zn2+] -->|competes| DMT1
+        Fe[Iron Fe2+] --> DMT1
+        Cu[Copper Cu2+] --> DMT1
+        Zn[Zinc Zn2+] --> DMT1
     end
 
     subgraph Iron Overload Effects
-        IO[Iron Overload] -->|suppresses| CuAbs[Copper Absorption]
-        IO -->|suppresses| ZnAbs[Zinc Absorption]
+        IO[Iron Overload] --> CuAbs[Copper Absorption Suppressed]
+        IO --> ZnAbs[Zinc Absorption Suppressed]
     end
 
     subgraph Low Copper Cascade
