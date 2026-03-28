@@ -149,20 +149,42 @@ Standard NAC (N-acetyl-L-cysteine) capsules are sufficient — no need for "sust
 **Consideration**: High doses needed for effect; may cause GI upset initially
 **Strategy**: Try NAC first (better evidence for TTM specifically); add inositol if NAC alone is insufficient
 
-## Supplement Timing Optimisation
+## Daily Supplement Protocol
 
-| Time | Supplement | Rationale |
-|------|-----------|-----------|
-| **Morning with breakfast** | Elvanse 70mg, Fish oil, Creatine, Folate | Stimulant works throughout day; fat-soluble fish oil absorbs with food |
-| **Midday / lunch** | NAC 1200mg | Split dose; away from zinc timing |
-| **Evening meal** | Magnesium, Vitamin D3+K2, NAC 1200mg | Magnesium supports sleep; D3 with fat for absorption |
-| **Bedtime (away from meals)** | Zinc picolinate | Away from iron-rich meals and calcium; reduces competition for absorption |
+*Confirmed March 2026. Products verified against blood results and research notes.*
 
-**Key timing rules**:
-- Zinc **away from meals** containing iron, calcium, or phytates
-- NAC can be taken with or without food
-- Magnesium at bedtime may improve sleep quality
-- Fish oil with food for absorption
+| Time | Supplement | Product | Dose | Why This Timing |
+|------|-----------|---------|------|----------------|
+| **Wake** | Elvanse | Prescribed | 70mg | Consistent absorption; start 14hr clearance clock before sleep |
+| **Breakfast** | Fish oil | Nutravita 2000mg (660 EPA / 440 DHA) | 1 serving | Fat-soluble — needs dietary fat |
+| | Creatine | MyVitamins Creatine Monohydrate | 3g (3 tabs) | Stomach-friendly with food; timing non-critical |
+| | 5-MTHF | Thorne 5-MTHF 1mg (Metafolin) | 1 cap (1mg) | B-vitamins absorb well with meals |
+| | Collagen | NG Collagen Glow Up | 1 scoop (~12.6g) | Flexible — just consistent daily intake |
+| **~1hr post-Elvanse** | NAC | NOW Foods NAC 600mg | 1 cap (600mg) | Separate from Elvanse; glutamate modulation through the day |
+| **Evening meal** | Vitamin D3 + K2 | Evo D3 4000 IU + K2 400µg | 1 cap | Fat-soluble — needs dietary fat |
+| | NAC | NOW Foods NAC 600mg | 1 cap (600mg) | Split dose for sustained glutathione support |
+| **Bedtime** | Magnesium 3-in-1 | NG Mag (glycinate 1000mg, malate 400mg, citrate 400mg) | 1 tab | Glycinate supports sleep; malate for overnight muscle recovery |
+| | Zinc picolinate | Thorne Zinc Picolinate | 1 cap (15mg) | Empty stomach — away from iron, calcium, phytates for ZIP4 absorption |
+
+### NAC Titration
+
+Start at 2 caps/day (1200mg) for 2 weeks. If tolerated, increase to 4 caps/day (2400mg) — add a second cap at breakfast and a second at evening meal. Monitor at next quarterly bloods.
+
+### Key Rules
+
+- **Tea or coffee WITH meals** — tannins inhibit iron absorption (therapeutic in iron overload)
+- **No vitamin C supplements** — dietary intake is sufficient; supplemental doses enhance iron absorption
+- **Zinc and magnesium** both compete for absorption — the small gap at bedtime helps
+- **Front-load protein at breakfast** before Elvanse appetite suppression kicks in
+
+### Stopped / Not Taking
+
+| Product | Reason |
+|---------|--------|
+| NG Zinc 3-in-1 (96.4mg Zn + 2mg Cu) | 2.4× upper tolerable limit; copper suppression risk with borderline Cu 14.3 µmol/L |
+| Holland & Barrett Folic Acid | Replaced by Thorne 5-MTHF — folic acid ineffective (folate 6.8 despite supplementation) |
+| Solgar Vitamin E 268mg (400 IU) | Increased all-cause mortality at this dose (PMID: 15537682); may enhance iron absorption |
+| Solgar Chelated Manganese 8mg | Competes with iron on DMT1; neurotoxic accumulation risk in basal ganglia — same regions affected by iron overload |
 
 ## Dietary Considerations
 

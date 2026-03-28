@@ -161,6 +161,27 @@ permalink: research/research-avenues-tracker
 | 67 | NAC safety and benefit in iron overload | B | Direct — thalassemia RCT NNT=4.8 | Complete |
 | 68 | NAC as ferroptosis inhibitor via GSH/GPX4 | B | Direct — bypasses System Xc- | Complete |
 
+### Medication Interactions
+
+| # | Avenue | Evidence | Relevance | Status |
+|---|--------|----------|-----------|--------|
+| 71 | Testosterone-dopamine-iron interactions in AuDHD | C | Direct — endocrine panel pending, age 37 recovery window | Complete |
+| 72 | Elvanse pharmacokinetics in iron overload (CYP2D6, COMT, oxidative stress) | C-D | Direct — 70mg daily, Fe3+ inhibits COMT | Complete |
+
+### Musculoskeletal
+
+| # | Avenue | Evidence | Relevance | Status |
+|---|--------|----------|-----------|--------|
+| 73 | Iron-mediated joint pathology (CPPD, chondrocalcinosis) | B | Direct — back pain, prior ferritin 700 | Complete |
+
+### Burnout and Sensory
+
+| # | Avenue | Evidence | Relevance | Status |
+|---|--------|----------|-----------|--------|
+| 74 | Autistic burnout as distinct neurobiological state | B | Direct — chronic fatigue, masking, AuDHD double-hit | Complete |
+| 75 | Mineral rebalancing protocol during active phlebotomy | B-C | Direct — borderline Cu/Zn, phlebotomy imminent | Complete |
+| 76 | Sensory processing, neuroinflammation, and iron in autism | C | Direct — E/I balance, thalamic gating, iron-GABA link | Complete |
+
 ### Testing
 
 | # | Avenue | Evidence | Relevance | Status |
@@ -189,6 +210,12 @@ permalink: research/research-avenues-tracker
 | 60-63 | Exercise: EF (SMD=0.42), hepcidin, dopamine/BDNF, practical barriers | Cognitively engaging exercise 3x/week best; start 30min after Elvanse | [[research/Exercise as Medicine for AuDHD-HFE]] |
 | 64-68 | Neuroprotection + NAC: HFE-neurodegeneration meta-analyses, QSM, NAC safety | No carrier risk increase for PD/ALS/AD; NAC safe and beneficial; chelation harmful | [[research/HFE and Long-Term Neurodegeneration Risk]], [[research/NAC and Iron Metabolism]] |
 | 69-70 | UK testing: pharmacogenomics + endocrine panel options and pricing | Best combo: myDNA £170 + Methylation £289 + Medichecks £249 = £708 total | [[research/UK Testing Guide - Pharmacogenomics and Endocrine]] |
+| 71 | Testosterone-dopamine-iron interactions | Fe3+ inhibits COMT; Siemons case age 37 full recovery; no recovery after 40 | [[research/Testosterone-Dopamine-Iron Interactions]] |
+| 72 | Elvanse pharmacokinetics in iron overload | Fe3+ inhibits COMT amplifying stimulant effect; CYP450 reduced 56% in iron overload; renal pH unaffected | [[research/Elvanse Pharmacokinetics and Iron Overload]] |
+| 73 | Iron-mediated joint pathology | CPPD via pyrophosphatase inhibition; OR 6.5 hip chondrocalcinosis in compound hets; persists after phlebotomy | [[research/Iron-Mediated Joint Pathology]] |
+| 74 | Autistic burnout — neurobiological mechanisms | Raymaker framework; camouflaging → hair cortisol elevation; AuDHD double-hit; skill regression model | [[neurodevelopment/Autistic Burnout - Neurobiological Mechanisms]] |
+| 75 | Mineral rebalancing during phlebotomy | Bolann: Cu improves, Zn does NOT; active zinc supplementation needed; phased vitamin C reintroduction | [[research/Mineral Rebalancing During Phlebotomy]] |
+| 76 | Sensory processing, neuroinflammation, and iron | Iron disrupts E/I balance via PV+ interneurons and GAD; thalamic gating impairment; sensory-stress-iron feedback loop | [[neurodevelopment/Sensory Processing and Iron in Autism]] |
 
 ---
 
