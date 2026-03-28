@@ -21,14 +21,27 @@ Daily/
 # References (internal tooling)
 references/
 
-# OS files
-.DS_Store
-Thumbs.db
-desktop.ini
-
 # Raw uploaded files (sensitive data pre-redaction)
 Anthony_Granfield_Health_Results_Dec2025.md
 
 # Claude Code config
 CLAUDE.md
 .mcp.json
+
+# Digital Garden / Vercel build
+node_modules
+dist
+netlify/functions/search/data.json
+netlify/functions/search/index.json
+src/site/styles/theme.*.css
+src/site/styles/_theme.*.css
+.netlify
+.idea/
+.vercel
+.cache
+_site/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
