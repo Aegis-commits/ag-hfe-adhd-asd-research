@@ -26,6 +26,8 @@ permalink: health-research-moc
 > Personal health research vault. Cross-referenced notes covering iron metabolism, neurodevelopment, mineral interactions, gut-brain axis, and clinical management.
 > Patient: Anthony G. | Age: 37 | Key conditions: AuDHD (ADHD-PI + Autism), Trichotillomania, HFE C282Y/H63D compound heterozygote
 
+> [!heart] **New here? Start with the [[Partner Guide - Understanding My Health|Partner Guide]]** — a plain-language summary of what's going on, why I struggle, and how you can help.
+
 ---
 
 > [!abstract]- Quick Navigation
