@@ -34,10 +34,10 @@ flowchart TD
 
     S4 -.-> P1
 
-    classDef subtype fill:#4a6f8a,stroke:#2d4a5a,color:#fff
-    classDef timing fill:#6b6b6b,stroke:#444,color:#fff
-    classDef pathway fill:#7a5c6a,stroke:#4d3a42,color:#fff
-    classDef link fill:#8a7a4a,stroke:#5a4d2d,color:#fff
+    classDef subtype fill:#85c1e9,stroke:#2471a3,color:#0a1929
+    classDef timing fill:#d5dbdb,stroke:#7f8c8d,color:#1a1a1a
+    classDef pathway fill:#85c1e9,stroke:#2471a3,color:#0a1929
+    classDef link fill:#f0b27a,stroke:#ca6f1e,color:#1a1000
 
     class W,S1,S2,S3,S4 subtype
     class T1,T2,T3,T4 timing

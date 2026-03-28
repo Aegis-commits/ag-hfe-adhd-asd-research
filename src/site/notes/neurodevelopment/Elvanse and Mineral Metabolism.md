@@ -35,9 +35,9 @@ flowchart TD
     G --> M[Interacts with HFE Status]
 
     classDef drug fill:#4a7c8a,stroke:#2d4f5a,color:#fff
-    classDef mineral fill:#8a5c4a,stroke:#5a3d2d,color:#fff
-    classDef monitor fill:#5a7a5a,stroke:#3a4d3a,color:#fff
-    classDef link fill:#7a6a8a,stroke:#4d3f5a,color:#fff
+    classDef mineral fill:#f0b27a,stroke:#ca6f1e,color:#1a1000
+    classDef monitor fill:#d5dbdb,stroke:#7f8c8d,color:#1a1a1a
+    classDef link fill:#f0b27a,stroke:#ca6f1e,color:#1a1000
 
     class A,B,C drug
     class D,E,F,G mineral

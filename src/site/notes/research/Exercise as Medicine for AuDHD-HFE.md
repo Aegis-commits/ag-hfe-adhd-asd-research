@@ -59,9 +59,9 @@ flowchart TD
     EX -.-> EXEC_B
     EX -.-> MOTIV
 
-    classDef exercise fill:#2d6a2e,stroke:#333,color:#fff
-    classDef protective fill:#2a5a8a,stroke:#333,color:#fff
-    classDef barrier fill:#8b4513,stroke:#333,color:#fff
+    classDef exercise fill:#58d68d,stroke:#1e8449,color:#0a1f12
+    classDef protective fill:#58d68d,stroke:#1e8449,color:#0a1f12
+    classDef barrier fill:#edbb99,stroke:#af601a,color:#1a1000
 
     class EX exercise
     class HEP,REDIST,BDNF,NEUROGEN,DA_NE,ADHD_RELIEF,MICROB,SCFA,LATENCY,QUALITY protective

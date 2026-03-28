@@ -57,8 +57,8 @@ flowchart TD
     GATE3 -->|"Still impaired"| ELVANSE
     ELVANSE --> REVIEW
 
-    classDef phase fill:#2a5a8a,stroke:#333,color:#fff
-    classDef gate fill:#8b6914,stroke:#333,color:#fff
+    classDef phase fill:#85c1e9,stroke:#2471a3,color:#0a1929
+    classDef gate fill:#d5dbdb,stroke:#7f8c8d,color:#1a1a1a
 
     class HYGIENE,SENSORY,WAKE,MEL,CHRONO,MG,ACT,LIGHT,ELVANSE,REVIEW phase
     class GATE1,GATE2,GATE3 gate

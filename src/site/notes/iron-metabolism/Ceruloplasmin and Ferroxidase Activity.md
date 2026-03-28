@@ -53,7 +53,7 @@ flowchart LR
     FE2 --> NTBI
     NTBI --> TOX
 
-    classDef normal fill:#6b8f71,stroke:#4a6b4f,color:#fff
+    classDef normal fill:#85c1e9,stroke:#2471a3,color:#0a1929
     classDef impaired fill:#b06272,stroke:#8a4252,color:#fff
 
     class FPN,CP,FE3,TF,SAFE normal

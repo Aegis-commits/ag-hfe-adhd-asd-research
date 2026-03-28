@@ -37,11 +37,11 @@ flowchart TD
     F --> O[BFRB Drive]
     G --> O
 
-    classDef deficit fill:#8a5c4a,stroke:#5a3d2d,color:#fff
-    classDef internal fill:#4a7c8a,stroke:#2d4f5a,color:#fff
-    classDef cds fill:#6b6b6b,stroke:#444,color:#fff
-    classDef iron fill:#7a6a8a,stroke:#4d3f5a,color:#fff
-    classDef outcome fill:#5a7a5a,stroke:#3a4d3a,color:#fff
+    classDef deficit fill:#aab7b8,stroke:#5d6d7e,color:#1a1a2e
+    classDef internal fill:#85c1e9,stroke:#2471a3,color:#0a1929
+    classDef cds fill:#aab7b8,stroke:#5d6d7e,color:#1a1a2e
+    classDef iron fill:#f1948a,stroke:#c0392b,color:#1a0505
+    classDef outcome fill:#f7dc6f,stroke:#b7950b,color:#1a1400
 
     class A deficit
     class B,D,E,F,G internal

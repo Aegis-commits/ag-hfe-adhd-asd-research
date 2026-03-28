@@ -35,10 +35,10 @@ flowchart TD
     L --> R[Impaired OPC Maturation]
     R --> O
 
-    classDef normal fill:#4a7c8f,stroke:#2d4f5c,color:#fff
-    classDef damage fill:#8f4a4a,stroke:#5c2d2d,color:#fff
-    classDef hfe fill:#8f7a4a,stroke:#5c4f2d,color:#fff
-    classDef outcome fill:#6b4a8f,stroke:#3f2d5c,color:#fff
+    classDef normal fill:#85c1e9,stroke:#2471a3,color:#0a1929
+    classDef damage fill:#f1948a,stroke:#c0392b,color:#1a0505
+    classDef hfe fill:#d2b4de,stroke:#7d3c98,color:#1a0422
+    classDef outcome fill:#f7dc6f,stroke:#b7950b,color:#1a1400
 
     class A,B,C,D,E,F,G,H normal
     class I,J,K,L hfe

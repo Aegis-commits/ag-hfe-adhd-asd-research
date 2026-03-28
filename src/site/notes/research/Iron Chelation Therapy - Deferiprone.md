@@ -41,11 +41,11 @@ flowchart TD
     O -- No --> Q["Continue Phlebotomy and Antioxidants"]
     M -- No --> Q
 
-    classDef positive fill:#4a8,color:#fff,stroke:#276
-    classDef negative fill:#c44,color:#fff,stroke:#911
-    classDef decision fill:#58c,color:#fff,stroke:#247
-    classDef firstline fill:#396,color:#fff,stroke:#274
-    classDef caution fill:#c80,color:#fff,stroke:#964
+    classDef positive fill:#58d68d,stroke:#1e8449,color:#0a1f12
+    classDef negative fill:#f1948a,stroke:#c0392b,color:#1a0505
+    classDef decision fill:#85c1e9,stroke:#2471a3,color:#0a1929
+    classDef firstline fill:#58d68d,stroke:#1e8449,color:#0a1f12
+    classDef caution fill:#f7dc6f,stroke:#b7950b,color:#1a1400
 
     class C,D,E,F,G,H positive
     class I,J,K negative

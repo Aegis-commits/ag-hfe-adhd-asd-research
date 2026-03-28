@@ -22,9 +22,9 @@ flowchart TD
     H --> I[Increased Masking Load]
     I --> B
 
-    classDef pathological fill:#c96,stroke:#633,color:#000
-    classDef neuro fill:#69a,stroke:#346,color:#000
-    classDef outcome fill:#966,stroke:#633,color:#000
+    classDef pathological fill:#f1948a,stroke:#c0392b,color:#1a0505
+    classDef neuro fill:#85c1e9,stroke:#2471a3,color:#0a1929
+    classDef outcome fill:#f7dc6f,stroke:#b7950b,color:#1a1400
 
     class A,D,E pathological
     class B,C,G neuro

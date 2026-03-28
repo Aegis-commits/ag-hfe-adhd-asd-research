@@ -47,10 +47,10 @@ flowchart TD
     LIVER --> HCC["Fibrosis / HCC risk"]
     ENDO --> PITU["Pituitary iron deposition"]
 
-    classDef trigger fill:#b06272,stroke:#8a4252,color:#fff
-    classDef cascade fill:#c4956a,stroke:#9a7550,color:#fff
-    classDef damage fill:#4a6fa5,stroke:#2d4a7a,color:#fff
-    classDef outcome fill:#7a7a8a,stroke:#5a5a6a,color:#fff
+    classDef trigger fill:#f1948a,stroke:#c0392b,color:#1a0505
+    classDef cascade fill:#f1948a,stroke:#c0392b,color:#1a0505
+    classDef damage fill:#f1948a,stroke:#c0392b,color:#1a0505
+    classDef outcome fill:#f7dc6f,stroke:#b7950b,color:#1a1400
 
     class TSAT,TF_SAT trigger
     class NTBI,UPTAKE,FENTON,ROS cascade

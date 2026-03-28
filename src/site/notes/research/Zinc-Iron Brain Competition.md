@@ -37,9 +37,9 @@ flowchart TD
     ZN_IN -.->|"Reduced"| LOW_ZN
     LOW_ZN --> SHANK --> NMDA --> EI --> ASD
 
-    classDef overload fill:#8b0000,stroke:#333,color:#fff
-    classDef transport fill:#4a6a4a,stroke:#333,color:#fff
-    classDef consequence fill:#4a4a8a,stroke:#333,color:#fff
+    classDef overload fill:#f1948a,stroke:#c0392b,color:#1a0505
+    classDef transport fill:#58d68d,stroke:#1e8449,color:#0a1f12
+    classDef consequence fill:#f7dc6f,stroke:#b7950b,color:#1a1400
 
     class FE_OVER overload
     class DMT1,ZIP,FE_IN,ZN_IN transport

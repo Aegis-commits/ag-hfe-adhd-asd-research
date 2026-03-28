@@ -8,7 +8,18 @@
 > Personal health research vault. Cross-referenced notes covering iron metabolism, neurodevelopment, mineral interactions, gut-brain axis, and clinical management.
 > Patient: Anthony G. | Age: 37 | Key conditions: AuDHD (ADHD-PI + Autism), Trichotillomania, HFE C282Y/H63D compound heterozygote
 
+> [!heart] **New here? Start with the [[Partner Guide - Understanding My Health\|Partner Guide]]** — a plain-language summary of what's going on, why I struggle, and how you can help.
+
 ---
+
+> [!abstract]- Quick Navigation
+> **Lab:** [[lab-results/Blood Results - March 2026\|Blood Results - March 2026]] | [[lab-results/Blood Results - December 2025\|Blood Results - December 2025]]
+> **Genetics:** [[genetics/HFE Compound Heterozygosity\|HFE Compound Heterozygosity]] | [[genetics/HFE Compound Het - Disease Associations Beyond Iron\|HFE Compound Het - Disease Associations Beyond Iron]] | [[genetics/Genetic Architecture of AuDHD\|Genetic Architecture of AuDHD]]
+> **Iron:** [[iron-metabolism/Transferrin Saturation - Clinical Significance\|Transferrin Saturation - Clinical Significance]] | [[iron-metabolism/Iron Overload and NTBI\|Iron Overload and NTBI]] | [[iron-metabolism/Tryptophan-Kynurenine Pathway\|Tryptophan-Kynurenine Pathway]] | [[research/Ferroptosis and Neuronal Iron\|Ferroptosis]]
+> **Neuro:** [[neurodevelopment/Iron-Dopamine-ADHD Axis\|Iron-Dopamine-ADHD Axis]] | [[neurodevelopment/Trichotillomania and Neurodevelopmental Links\|Trichotillomania and Neurodevelopmental Links]] | [[neurodevelopment/Late-Diagnosed Autism - Distinct Profile\|Late-Diagnosed Autism - Distinct Profile]] | [[neurodevelopment/Interoception in AuDHD - Research Review\|Interoception]]
+> **Sleep:** [[research/Poor Sleep and AuDHD-HFE Interactions\|Sleep-HFE Interactions]] | [[research/Sleep Intervention Protocols for AuDHD Adults\|Sleep Protocols]]
+> **Clinical:** [[Action Items and Monitoring Plan\|Action Items and Monitoring Plan]] | [[diet-management/Diet and Supplement Strategy\|Diet and Supplement Strategy]] | [[diet-management/Dietary Management - Iron Overload\|Dietary Management - Iron Overload]]
+> **Tracking:** [[research/Research Avenues Tracker\|research/Research Avenues Tracker]] | [[research/UK Testing Guide - Pharmacogenomics and Endocrine\|UK Testing Guide]]
 
 ## Lab Results
 - [[lab-results/Blood Results - December 2025\|Blood Results - December 2025]] — comprehensive health assessment: ferritin 738, low folate, thyroid/HbA1c normal, RHR 88bpm, body composition
@@ -117,9 +128,9 @@ The following findings were verified against PubMed and OpenAlex on 2026-03-22, 
 
 ```mermaid
 flowchart LR
-    classDef gen fill:#e8daef,stroke:#7d3c98,color:#2c0735
-    classDef iron fill:#fadbd8,stroke:#c0392b,color:#4a0e0e
-    classDef out fill:#f9e79f,stroke:#f39c12,color:#4a3000
+    classDef gen fill:#d2b4de,stroke:#7d3c98,color:#1a0422
+    classDef iron fill:#f1948a,stroke:#c0392b,color:#1a0505
+    classDef out fill:#f7dc6f,stroke:#b7950b,color:#1a1400
 
     A[HFE C282Y / H63D]:::gen --> B[Iron Overload]:::iron
     B --> C[NTBI / Oxidative Stress]:::iron
@@ -161,9 +172,9 @@ flowchart LR
 
 ```mermaid
 flowchart TD
-    classDef sleep fill:#d6eaf8,stroke:#2980b9,color:#0a2740
-    classDef out fill:#f9e79f,stroke:#f39c12,color:#4a3000
-    classDef feed fill:#fadbd8,stroke:#c0392b,color:#4a0e0e
+    classDef sleep fill:#85c1e9,stroke:#2471a3,color:#0a1929
+    classDef out fill:#f7dc6f,stroke:#b7950b,color:#1a1400
+    classDef feed fill:#f1948a,stroke:#c0392b,color:#1a0505
 
     R[Poor Sleep]:::sleep
 

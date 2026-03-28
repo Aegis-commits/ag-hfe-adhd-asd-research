@@ -38,9 +38,9 @@ flowchart TD
     SUBSET -.-> GAP
     GAP -.-> DECISION
 
-    classDef consensus fill:#7a9cbf,stroke:#4a6c8f,color:#fff
-    classDef emerging fill:#c4956a,stroke:#9a7550,color:#fff
-    classDef decision fill:#6b8f71,stroke:#4a6b4f,color:#fff
+    classDef consensus fill:#85c1e9,stroke:#2471a3,color:#0a1929
+    classDef emerging fill:#f0b27a,stroke:#ca6f1e,color:#1a1000
+    classDef decision fill:#85c1e9,stroke:#2471a3,color:#0a1929
     classDef gap fill:#b06272,stroke:#8a4252,color:#fff
 
     class GENO,CONS,GUIDE,STATS consensus

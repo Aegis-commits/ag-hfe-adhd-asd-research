@@ -44,10 +44,10 @@ flowchart TD
     QOL --> FATIGUE["Fatigue + cognitive - Grade A"]
 
     classDef centre fill:#8b5e3c,stroke:#6b3e1c,color:#fff
-    classDef gradeA fill:#4a6fa5,stroke:#2d4a7a,color:#fff
-    classDef gradeB fill:#6b8f71,stroke:#4a6b4f,color:#fff
-    classDef gradeC fill:#b07d62,stroke:#8a5d42,color:#fff
-    classDef category fill:#7a7a8a,stroke:#5a5a6a,color:#fff
+    classDef gradeA fill:#85c1e9,stroke:#2471a3,color:#0a1929
+    classDef gradeB fill:#58d68d,stroke:#1e8449,color:#0a1f12
+    classDef gradeC fill:#f0b27a,stroke:#ca6f1e,color:#1a1000
+    classDef category fill:#d5dbdb,stroke:#7f8c8d,color:#1a1a1a
 
     class HFE centre
     class HCC,NAFLD,PCT,FATIGUE gradeA
