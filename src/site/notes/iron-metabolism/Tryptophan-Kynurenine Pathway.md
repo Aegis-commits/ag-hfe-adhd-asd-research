@@ -24,8 +24,8 @@ flowchart TD
     classDef protect fill:#58d68d,stroke:#1e8449,color:#0a1f12
     classDef danger fill:#f1948a,stroke:#c0392b,color:#1a0505
 
-    A[Tryptophan]:::source -->|IDO activated by inflammation| B[Kynurenine]
-    A -->|Tryptophan hydroxylase| C[5-HTP then Serotonin]:::protect
+    A[Tryptophan]:::source --> B[Kynurenine via IDO]
+    A --> C[5-HTP then Serotonin via TPH]:::protect
     C --> D[Melatonin]
     B --> E[3-Hydroxykynurenine - neurotoxic]
     B --> F[Kynurenic acid - neuroprotective]:::protect

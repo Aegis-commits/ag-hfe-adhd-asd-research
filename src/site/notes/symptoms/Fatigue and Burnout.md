@@ -12,12 +12,12 @@
 
 ```mermaid
 flowchart TD
-    A[NTBI / ROS] -->|oxidative stress| F[Fatigue]
-    B[Autistic Burnout] -->|masking cost| F
-    C[Sleep Disruption] -->|circadian misalignment| F
-    D[Low Testosterone] -->|pituitary iron deposition| F
-    E[Low Cu / Zn] -->|impaired enzymes| F
-    G[Dopamine Dysfunction] -->|depleted DA/NE| F
+    A[NTBI / ROS - Oxidative Stress] --> F[Fatigue]
+    B[Autistic Burnout - Masking Cost] --> F
+    C[Sleep Disruption - Circadian Misalignment] --> F
+    D[Low Testosterone - Pituitary Iron] --> F
+    E[Low Cu / Zn - Impaired Enzymes] --> F
+    G[Dopamine Dysfunction - Depleted DA/NE] --> F
     F --> H[Reduced Capacity]
     H --> I[Increased Masking Load]
     I --> B

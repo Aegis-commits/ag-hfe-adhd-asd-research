@@ -127,38 +127,32 @@ The following findings were verified against PubMed and OpenAlex on 2026-03-22, 
 > **Colour key:** 🟣 Genetics | 🔴 Iron pathway / mechanism | 🟡 Symptom endpoint
 
 ```mermaid
-flowchart LR
+flowchart TD
     classDef gen fill:#d2b4de,stroke:#7d3c98,color:#1a0422
     classDef iron fill:#f1948a,stroke:#c0392b,color:#1a0505
     classDef out fill:#f7dc6f,stroke:#b7950b,color:#1a1400
 
     A[HFE C282Y / H63D]:::gen --> B[Iron Overload]:::iron
+
     B --> C[NTBI / Oxidative Stress]:::iron
     B --> D[Suppressed Cu / Zn]:::iron
     B --> I[Brain Iron]:::iron
     B --> N[Gut Dysbiosis]:::iron
     B --> AW[Pituitary Iron]:::iron
 
-    C --> E[Fatigue]:::out
-    C --> F[Joint Damage]:::out
+    C --> E[Fatigue + Joint Damage]:::out
     C --> GSH[GSH Depletion]:::iron
-    GSH --> FPT[Ferroptosis Risk]:::out
+    GSH --> FPT[Ferroptosis]:::out
     GSH --> GLU[Glutamate Excess]:::out
 
-    D --> DBH[Impaired DBH]:::iron
-    D --> ZN[Low Synaptic Zinc]:::iron
-    DBH --> ADHD[ADHD Symptoms]:::out
-    ZN --> ASD[Autism Symptoms]:::out
+    D --> ADHD[ADHD Symptoms]:::out
+    D --> ASD[Autism Symptoms]:::out
 
-    I --> BG[Basal Ganglia Disruption]:::iron
-    I --> MY[Impaired Myelination]:::iron
-    I --> INS[Insula Iron Deposition]:::iron
-    BG --> TTM[Trichotillomania]:::out
-    MY --> ADHD
-    INS --> INT[Low Interoception]:::out
+    I --> TTM[Trichotillomania]:::out
+    I --> ADHD
+    I --> INT[Low Interoception]:::out
 
-    N --> IDO[IDO Activation]:::iron
-    IDO --> KYN[Kynurenine / Serotonin]:::iron
+    N --> KYN[Kynurenine Shunt]:::iron
     KYN --> TTM
     KYN --> SLP[Poor Sleep]:::out
 
@@ -181,20 +175,53 @@ flowchart TD
     R --> AH[Low Glymphatic Clearance]:::sleep
     R --> AI[Gut Dysbiosis]:::sleep
     R --> AJ[Low Executive Function]:::sleep
-    R --> AK[DA Receptor Downregulation]:::sleep
+    R --> AK[DA Downregulation]:::sleep
     R --> AL[Sensory Amplification]:::sleep
-    R --> AM[High Cortisol / HPA]:::sleep
+    R --> AM[High Cortisol]:::sleep
     R --> FPT[Ferroptosis Acceleration]:::sleep
 
-    AH -->|iron accumulates| BI[Brain Iron]:::feed
-    AI -->|inflammation| IDO[IDO Activation]:::feed
-    AM -->|inflammation| IDO
+    AH --> BI[Brain Iron]:::feed
+    AI --> IDO[IDO Activation]:::feed
+    AM --> IDO
     AJ --> ADHD[ADHD Symptoms]:::out
     AJ --> TTM[Trichotillomania]:::out
     AK --> ADHD
     AL --> ASD[Autism Symptoms]:::out
 
-     Phlebotomy targets
+    ADHD --> R
+    ASD --> R
+    MASK[Masking Cost]:::out --> R
+    HYP[Internal Hyperactivity]:::out --> R
+    ELV[Elvanse]:::out --> R
+    AL -.-> R
+```
+
+### 3. Interventions and Targets
+
+> [!tip] Dotted lines show protective effects.
+> **Colour key:** 🟢 Intervention | 🟠 Medication | 🔴 Target / problem
+
+```mermaid
+flowchart LR
+    classDef protect fill:#58d68d,stroke:#1e8449,color:#0a1f12
+    classDef med fill:#f0b27a,stroke:#ca6f1e,color:#1a1000
+    classDef target fill:#f1948a,stroke:#c0392b,color:#1a0505
+
+    subgraph TREAT ["Treatment"]
+        M[Phlebotomy]:::protect
+        L[Diet Changes]:::protect
+        BA[Exercise]:::protect
+        BB[NAC]:::protect
+        AN[Melatonin]:::protect
+        AO[Chronotherapy]:::protect
+        AP[Sensory Optimisation]:::protect
+    end
+
+    subgraph MEDS ["Medication"]
+        J[Elvanse 70mg]:::med
+    end
+
+    %% Phlebotomy targets
     M -.-> IO[Iron Overload]:::target
     M -.-> PIT[Pituitary Iron]:::target
     M -.-> TEST[Low Testosterone]:::target

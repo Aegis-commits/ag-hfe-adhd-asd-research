@@ -33,10 +33,10 @@ flowchart TD
 
     D --> G[Parkinson Disease Risk]
     E --> G
-    G -->|No association - meta-analyses| G1[Population-level risk]
+    G --> G1[No association in meta-analyses]
 
     F --> H[Alzheimer Disease Risk]
-    H -->|Mixed evidence| H1[Oxidative amplifier if pathology exists]
+    H --> H1[Mixed evidence - oxidative amplifier if pathology exists]
 
     D --> I[ALS Risk]
     I -->|Not replicated at scale| I1[Population-level risk]

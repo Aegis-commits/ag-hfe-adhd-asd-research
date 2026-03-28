@@ -49,8 +49,8 @@ flowchart TD
     R --> A
 
     S[Phlebotomy] -.-> T{Age at Treatment}
-    T -->|Under 40| U[Hormone Recovery Likely]
-    T -->|Over 40| V[Recovery Unlikely]
+    T -->|Yes| U[Under 40 - Hormone Recovery Likely]
+    T -->|No| V[Over 40 - Recovery Unlikely]
     S -.-> W[Improved Insulin Sensitivity]
     S -.-> X[Possible Thyroid Recovery]
 

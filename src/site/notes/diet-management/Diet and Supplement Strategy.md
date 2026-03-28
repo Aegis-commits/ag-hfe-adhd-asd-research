@@ -29,12 +29,12 @@ flowchart TD
         MIN[Zn + Mg Optimisation] --> R7[Enzyme Cofactors]
     end
 
-    R1 -.->|enables| R4
-    R1 -.->|improves| MIN
+    R1 -.-> R4
+    R1 -.-> MIN
 
-    MON[Quarterly Bloods] -.->|adjust| P
-    MON -.->|adjust| NAC
-    MON -.->|adjust| VD
+    MON[Quarterly Bloods] -.-> P
+    MON -.-> NAC
+    MON -.-> VD
 
     classDef tier1 fill:#f0b27a,stroke:#ca6f1e,color:#1a1000
     classDef tier2 fill:#85c1e9,stroke:#2471a3,color:#0a1929
@@ -78,9 +78,22 @@ The current stack is **reasonable and well-constructed**. No harmful interaction
 
 **Dose**: 1200mg–2400mg/day, split into two doses
 **Onset**: 4–9 weeks for TTM benefit
-**Timing**: Can be taken with or without food
-**Safety**: Generally well-tolerated; mild GI effects possible; may increase the effect of some medications on blood pressure
+**Timing**: Can be taken with or without food; separate from Elvanse by ~1 hour (good practice, no known interaction)
+**Safety**: Generally well-tolerated; mild GI effects possible; may increase the effect of some medications on blood pressure. Safe in iron-loaded patients — see [[research/NAC and Iron Metabolism\|NAC and Iron Metabolism]] for full evidence review including thalassemia RCT safety data.
 **Note**: NAC is also a mucolytic — may cause mild increase in mucus clearance initially
+
+#### Buying Guide (UK)
+
+Standard NAC (N-acetyl-L-cysteine) capsules are sufficient — no need for "sustained release" or premium formulations. The Grant 2009 TTM trial used plain NAC capsules. Choose 600mg capsules for easy dose titration.
+
+| Product | Dose/Cap | Approx. Daily Cost | Notes |
+|---------|----------|-------------------|-------|
+| **NOW Foods NAC 600mg** | 600mg | ~£0.15 | **Recommended** — clean formula with selenium (supports GPX4, the key ferroptosis defence enzyme) and molybdenum (supports sulfite metabolism from NAC thiol chemistry); widely available on Amazon UK |
+| Nutricost NAC 600mg | 600mg | ~£0.10 | Budget option; 240 caps; no fillers |
+| Jarrow Formulas NAC Sustain 600mg | 600mg | ~£0.25 | Sustained-release bilayer; good if GI sensitivity is an issue |
+| Life Extension NAC 600mg | 600mg | ~£0.30 | Pharmaceutical-grade; trusted brand |
+
+**Starting protocol**: 600mg morning + 600mg evening (1200mg/day) for 2 weeks, then increase to 1200mg morning + 1200mg evening (2400mg/day) if tolerated. Monitor at next quarterly bloods — not for NAC-specific concerns but as standard HFE practice.
 
 ### 2. Vitamin D3 — HIGH PRIORITY
 

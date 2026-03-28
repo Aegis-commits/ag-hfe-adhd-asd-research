@@ -31,7 +31,7 @@ flowchart TD
     F --> G[GABA Interneuron Modulation]
     D --> H[Monoamine Turnover]
 
-    I[Glutamate] -->|GAD + B6| J[GABA Synthesis]
+    I[Glutamate] --> J[GABA Synthesis via GAD, B6]
     J --> K[Inhibitory Tone]
 
     L[Iron Excess in Basal Ganglia] --> M[Oxidative Stress]

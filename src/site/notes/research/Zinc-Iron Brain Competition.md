@@ -30,11 +30,11 @@ flowchart TD
     FE_OVER --> DMT1
     FE_OVER --> ZIP
     DMT1 --> FE_IN
-    DMT1 -.->|"Displaces"| ZN_IN
+    DMT1 -.-> ZN_IN
     ZIP --> FE_IN
-    ZIP -.->|"Displaces"| ZN_IN
+    ZIP -.-> ZN_IN
 
-    ZN_IN -.->|"Reduced"| LOW_ZN
+    ZN_IN -.-> LOW_ZN
     LOW_ZN --> SHANK --> NMDA --> EI --> ASD
 
     classDef overload fill:#f1948a,stroke:#c0392b,color:#1a0505

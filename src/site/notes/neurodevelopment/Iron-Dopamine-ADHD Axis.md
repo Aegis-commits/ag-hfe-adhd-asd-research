@@ -12,8 +12,8 @@
 
 ```mermaid
 flowchart TD
-    A[Tyrosine] -->|TH + Fe2+ + BH4| B[L-DOPA]
-    B -->|DOPA decarboxylase| C[Dopamine]
+    A[Tyrosine] --> B[L-DOPA via TH, Fe2+, BH4]
+    B --> C[Dopamine via DOPA decarboxylase]
     D[Iron - TH Cofactor] --> A
 
     E[HFE C282Y/H63D] --> F[Brain Iron Dysregulation]

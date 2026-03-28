@@ -31,11 +31,11 @@ flowchart LR
         IMBALANCE["Catecholamine Imbalance"]
     end
 
-    FE_EXCESS -->|"Suppresses absorption"| CU_LOW
-    CU_LOW -->|"Reduces activity"| DBH_IMPAIR
-    DBH_IMPAIR -->|"DA high, NE low"| IMBALANCE
+    FE_EXCESS --> CU_LOW
+    CU_LOW --> DBH_IMPAIR
+    DBH_IMPAIR --> IMBALANCE
 
-    DBH_IMPAIR -.->|"Blocks conversion"| DBH
+    DBH_IMPAIR -.-> DBH
 
     classDef enzyme fill:#58d68d,stroke:#1e8449,color:#0a1f12
     classDef molecule fill:#85c1e9,stroke:#2471a3,color:#0a1929

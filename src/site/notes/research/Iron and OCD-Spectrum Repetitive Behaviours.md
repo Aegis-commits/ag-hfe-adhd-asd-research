@@ -37,8 +37,8 @@ flowchart TD
 
     Q[NAC] -.-> R[Glutathione Repletion]
     Q -.-> S[Glutamate Modulation]
-    R -.->|Protective| J
-    S -.->|Protective| L
+    R -.-> J
+    S -.-> L
 
     classDef circuit fill:#85c1e9,stroke:#2471a3,color:#0a1929
     classDef damage fill:#f1948a,stroke:#c0392b,color:#1a0505
