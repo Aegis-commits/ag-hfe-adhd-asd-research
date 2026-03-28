@@ -23,6 +23,42 @@ permalink: research/iron-and-myelination
 
 Oligodendrocytes — the cells that produce myelin sheaths around axons — are the **most iron-rich cells in the brain**. Iron is not merely stored in them; it is a direct enzymatic requirement for myelin production. This creates a critical vulnerability: dysregulated iron (either deficiency or overload) can impair myelination during neurodevelopment.
 
+> [!info]- Colour Key
+> 🔵 Normal | 🔴 Damage | 🟡 HFE | 🟣 Outcome
+
+```mermaid
+flowchart TD
+    A[Iron Availability] --> B[OPC Differentiation]
+    B --> C[Mature Oligodendrocyte]
+    C --> D[Cholesterol Synthesis]
+    C --> E[Fatty Acid Synthesis]
+    C --> F[ATP Production]
+    D --> G[Myelin Sheath Formation]
+    E --> G
+    F --> G
+    G --> H[Healthy Axon Insulation]
+
+    I[HFE Variants] --> J[Dysregulated Brain Iron]
+    J --> K[Regional Iron Excess]
+    J --> L[Regional Iron Deficit]
+    K --> M[ROS / Ferroptosis]
+    M --> N[Oligodendrocyte Death]
+    N --> O[Demyelination]
+    O --> P[Exposed Axons]
+    P --> Q[Neuronal Vulnerability]
+    L --> R[Impaired OPC Maturation]
+    R --> O
+
+    classDef normal fill:#4a7c8f,stroke:#2d4f5c,color:#fff
+    classDef damage fill:#8f4a4a,stroke:#5c2d2d,color:#fff
+    classDef hfe fill:#8f7a4a,stroke:#5c4f2d,color:#fff
+    classDef outcome fill:#6b4a8f,stroke:#3f2d5c,color:#fff
+
+    class A,B,C,D,E,F,G,H normal
+    class I,J,K,L hfe
+    class M,N,O,P,Q,R damage
+```
+
 ## The Biochemical Dependency
 
 Iron is required by oligodendrocytes for:

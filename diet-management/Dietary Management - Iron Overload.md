@@ -28,6 +28,42 @@ You reduced ferritin from ~700 to 380 ug/L through dietary changes alone. That i
 
 > **Milman NT.** "Managing genetic hemochromatosis: an overview of dietary measures which may reduce intestinal iron absorption." *Gastroenterol Res.* 2021;14(2):66-80. PMC8110241
 
+## Meal Planning Flowchart
+
+> [!info]- Colour Key
+> 🟢 Inhibitor | 🟠 Enhancer | 🔵 Decision | 🟡 Safe
+
+```mermaid
+flowchart TD
+    A[Plan a Meal] --> B{Contains Heme Iron?}
+    B -->|Yes: red meat, fish| C[Pair with Inhibitors]
+    B -->|No: plant-based, eggs| D[Lower Risk Meal]
+
+    C --> E[Tea or Coffee with Meal]
+    C --> F[Add Dairy / Calcium]
+    C --> G[Whole Grains for Phytates]
+
+    D --> H{Check for Enhancers}
+    H -->|Vitamin C present| I[Separate from Iron Source]
+    H -->|Alcohol present| J[Avoid — Hepatotoxic Synergy]
+    H -->|Neither| K[Safe to Proceed]
+
+    L[Timing Strategy] --> M[Breakfast: Oats + Milk + Tea]
+    L --> N[Lunch: Legumes + Whole Grain]
+    L --> O[Dinner: If Meat, Add Inhibitors]
+    L --> P[Snacks: Nuts, Cheese, Eggs]
+
+    classDef inhibitor fill:#6a9,stroke:#364,color:#000
+    classDef enhancer fill:#c96,stroke:#633,color:#000
+    classDef decision fill:#69a,stroke:#346,color:#000
+    classDef safe fill:#9a6,stroke:#463,color:#000
+
+    class E,F,G inhibitor
+    class I,J enhancer
+    class B,H decision
+    class K,D,M,N,O,P safe
+```
+
 ## Two Types of Dietary Iron
 
 | Type | Source | Absorption Rate | Modifiable? |

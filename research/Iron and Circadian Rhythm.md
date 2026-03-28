@@ -46,6 +46,48 @@ This switching between enzyme and RNA-binding protein is itself rhythmic — osc
 > - They drive rhythmic IRP2 expression, which then rhythmically regulates transferrin receptor (TFRC) mRNA stability
 > - This creates a direct link: **clock genes -> IRP2 -> iron uptake regulation**
 
+> [!info]- Colour Key
+> 🔵 Clock | 🔴 Damage | 🟣 Outcome
+
+```mermaid
+flowchart TD
+    A[BMAL1:CLOCK] --> B[IRP2 Transcription]
+    B --> C[IRP2 Protein]
+    C --> D[IRE Binding on mRNA]
+    D --> E[TFRC Stability]
+    D --> F[Ferritin Translation]
+
+    G[Feeding Rhythm] --> H[IRP1 Oscillation]
+    H --> I[Aconitase / RNA-binding Switch]
+    I --> D
+
+    E --> J[Circadian Iron Uptake]
+    F --> J
+    J --> K[Normal Iron Gene Cycling]
+
+    L[Iron Overload] --> M[Constitutively High Iron]
+    M --> N[Blunted IRP Cycling]
+    N --> O[Flattened Iron Oscillation]
+    O --> P[Disrupted Clock Gene Feedback]
+
+    L --> Q[Tryptophan Hydroxylase Disruption]
+    Q --> R[Impaired Serotonin Synthesis]
+    R --> S[Reduced Melatonin Production]
+
+    P --> T[Poor Sleep Architecture]
+    S --> T
+    T --> U[ADHD Circadian Dysfunction]
+    T --> V[ASD Sleep Disruption]
+
+    classDef clock fill:#4a7c8f,stroke:#2d4f5c,color:#fff
+    classDef damage fill:#8f4a4a,stroke:#5c2d2d,color:#fff
+    classDef outcome fill:#6b4a8f,stroke:#3f2d5c,color:#fff
+
+    class A,B,C,D,E,F,G,H,I,J,K clock
+    class L,M,N,O,P,Q,R,S damage
+    class T,U,V outcome
+```
+
 ## Iron-Dependent Neurotransmitter Synthesis and Circadian Rhythms
 
 Iron is a cofactor for three hydroxylases that synthesise circadian-relevant neurotransmitters:

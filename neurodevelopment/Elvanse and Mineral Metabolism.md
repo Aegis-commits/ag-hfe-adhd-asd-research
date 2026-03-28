@@ -26,6 +26,40 @@ There is limited high-quality evidence that lisdexamfetamine directly alters iro
 - reduced dietary intake variety
 - possible long-term micronutrient drift (zinc, magnesium, iron balance)
 
+## Pathway Overview
+
+> [!info]- Colour Key
+> 🔵 Medication | 🟤 Mineral | 🟢 Monitoring | 🟣 Link
+
+```mermaid
+flowchart TD
+    A[Elvanse/Lisdexamfetamine] --> B[Appetite Suppression]
+    B --> C[Reduced Dietary Intake]
+    C --> D[Mineral Drift]
+
+    D --> E[Copper - Low Normal]
+    D --> F[Zinc - Low Normal]
+    D --> G[Iron Balance Shift]
+
+    H[Monitoring Cycle] --> I[Track Weight/Diet Monthly]
+    I --> J[Periodic Bloods]
+    J --> K[Ferritin, TSAT, Cu, Zn, FBC]
+    K --> L[Adjust Protocol]
+    L --> H
+
+    G --> M[Interacts with HFE Status]
+
+    classDef drug fill:#4a7c8a,stroke:#2d4f5a,color:#fff
+    classDef mineral fill:#8a5c4a,stroke:#5a3d2d,color:#fff
+    classDef monitor fill:#5a7a5a,stroke:#3a4d3a,color:#fff
+    classDef link fill:#7a6a8a,stroke:#4d3f5a,color:#fff
+
+    class A,B,C drug
+    class D,E,F,G mineral
+    class H,I,J,K,L monitor
+    class M link
+```
+
 ## What Is Well Supported
 - Lisdexamfetamine is effective and generally safe long-term in ADHD populations
 - Common adverse effects include reduced appetite/weight change, which can affect nutrient intake

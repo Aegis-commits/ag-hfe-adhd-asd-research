@@ -27,6 +27,65 @@ permalink: obsidian/research/poor-sleep-and-au-dhd-hfe-interactions
 
 > Poor sleep is not merely a symptom of AuDHD and HFE — it is an active amplifier of every pathological axis in Anthony's case. Sleep deprivation worsens iron toxicity, accelerates ferroptosis, degrades executive function, increases sensory reactivity, promotes gut dysbiosis, and lowers the threshold for trichotillomania. This creates multiple self-reinforcing vicious cycles.
 
+> [!info]- Colour Key
+> 🔴 Hub | 🟠 Pathological | 🔵 Neuro | 🟤 Sensory
+
+```mermaid
+flowchart TD
+    SLEEP["Poor Sleep"]
+
+    subgraph Cycle_A["Cycle A: Iron-Sleep-Ferroptosis"]
+        FERR["Ferroptosis Acceleration"]
+        GSH["Low GSH / GPX4"]
+    end
+
+    subgraph Cycle_B["Cycle B: Glymphatic Failure"]
+        GLYMP["Glymphatic Impairment"]
+        BRAIN_FE["Brain Iron Accumulation"]
+    end
+
+    subgraph Cycle_C["Cycle C: Gut-Inflammation"]
+        GUT["Gut Dysbiosis"]
+        INFLAM["Systemic Inflammation"]
+    end
+
+    subgraph Cycle_D["Cycle D: Executive Dysfunction"]
+        EXEC["Low PFC Function"]
+        ADHD_TTM["ADHD / TTM Worsening"]
+    end
+
+    subgraph Cycle_E["Cycle E: Sensory Amplification"]
+        SENSORY["Sensory Hyper-reactivity"]
+        BURNOUT["Autistic Burnout"]
+    end
+
+    SLEEP --> GSH --> FERR
+    FERR --> SLEEP
+
+    SLEEP --> GLYMP --> BRAIN_FE
+    BRAIN_FE --> SLEEP
+
+    SLEEP --> GUT --> INFLAM
+    INFLAM --> SLEEP
+
+    SLEEP --> EXEC --> ADHD_TTM
+    ADHD_TTM --> SLEEP
+
+    SLEEP --> SENSORY --> BURNOUT
+    BURNOUT --> SLEEP
+
+    classDef hub fill:#8b0000,stroke:#333,color:#fff
+    classDef pathological fill:#b35900,stroke:#333,color:#fff
+    classDef neuro fill:#4a4a8a,stroke:#333,color:#fff
+    classDef sensory fill:#5a5a5a,stroke:#333,color:#fff
+
+    class SLEEP hub
+    class FERR,GSH,BRAIN_FE,GLYMP pathological
+    class GUT,INFLAM pathological
+    class EXEC,ADHD_TTM neuro
+    class SENSORY,BURNOUT sensory
+```
+
 ---
 
 ## 1. Sleep Problems Are Near-Universal in AuDHD

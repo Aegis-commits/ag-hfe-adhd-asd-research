@@ -25,6 +25,43 @@ Ferroptosis is a form of **regulated cell death** defined by iron-dependent pero
 
 The term was coined in 2012 by Dixon et al., and its relevance to brain disease has expanded rapidly since.
 
+> [!info]- Colour Key
+> 🔴 Pathological | 🟢 Protective | 🔵 Neutral | ⚪ Outcome
+
+```mermaid
+flowchart TD
+    A["Iron Overload"] --> B["Fe2+ Labile Iron Pool"]
+    B --> C["Fenton Reaction"]
+    C --> D["Lipid Peroxidation"]
+    D --> E{"GPX4 Active?"}
+    E -- Yes --> F["Lipid-OOH reduced to Lipid-OH"]
+    F --> G["Cell Survives"]
+    E -- No --> H["Lipid Peroxides Accumulate"]
+    H --> I["Ferroptotic Cell Death"]
+
+    J["System Xc-"] --> K["Cystine Import"]
+    K --> L["Cysteine"]
+    L --> M["GSH Synthesis"]
+    M --> E
+
+    N["NAC"] -.-> L
+
+    I --> O["DAMPs Released"]
+    O --> P["Neuroinflammation"]
+    P --> Q["Further Iron Dysregulation"]
+    Q --> A
+
+    classDef pathological fill:#c44,color:#fff,stroke:#911
+    classDef protective fill:#4a8,color:#fff,stroke:#276
+    classDef neutral fill:#58c,color:#fff,stroke:#247
+    classDef outcome fill:#888,color:#fff,stroke:#555
+
+    class A,B,C,D,H,I,O,P,Q pathological
+    class F,G,M protective
+    class J,K,L,E neutral
+    class N protective
+```
+
 ## Why the Brain Is Uniquely Vulnerable
 
 > **Bhatt S et al.** "Neuroferroptosis in health and diseases." *Nat Rev Neurosci*. 2025. DOI: 10.1038/s41583-025-00930-5

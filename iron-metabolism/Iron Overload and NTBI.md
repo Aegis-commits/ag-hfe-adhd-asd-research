@@ -40,6 +40,38 @@ These species drive oxidative damage and organ injury more directly than ferriti
 
 Target organs: liver, pancreas, heart, endocrine tissue, joints, possibly CNS.
 
+> [!info]- Colour Key
+> 🔴 Trigger | 🟠 Cascade | 🔵 Organ damage | ⚪ Outcome
+
+```mermaid
+flowchart TD
+    TSAT["TSAT rises above 45%"] --> TF_SAT["Transferrin saturated"]
+    TF_SAT --> NTBI["NTBI appears in plasma"]
+    NTBI --> UPTAKE["Non-regulated cell uptake"]
+    UPTAKE --> FENTON["Fenton reaction: Fe2+ + H2O2"]
+    FENTON --> ROS["ROS generation"]
+
+    ROS --> LIVER["Liver damage"]
+    ROS --> HEART["Cardiac iron loading"]
+    ROS --> BRAIN["Brain oxidative stress"]
+    ROS --> JOINTS["Joint cartilage damage"]
+    ROS --> ENDO["Endocrine disruption"]
+    ROS --> PANC["Pancreatic beta-cell loss"]
+
+    LIVER --> HCC["Fibrosis / HCC risk"]
+    ENDO --> PITU["Pituitary iron deposition"]
+
+    classDef trigger fill:#b06272,stroke:#8a4252,color:#fff
+    classDef cascade fill:#c4956a,stroke:#9a7550,color:#fff
+    classDef damage fill:#4a6fa5,stroke:#2d4a7a,color:#fff
+    classDef outcome fill:#7a7a8a,stroke:#5a5a6a,color:#fff
+
+    class TSAT,TF_SAT trigger
+    class NTBI,UPTAKE,FENTON,ROS cascade
+    class LIVER,HEART,BRAIN,JOINTS,ENDO,PANC damage
+    class HCC,PITU outcome
+```
+
 ## Key Evidence
 - Duca L et al. *Int J Mol Sci* 2025;26(13):6433 - comprehensive NTBI/LPI toxicity review (PMC12249652)
 - Garbowski MW et al. *Am J Hematol* 2023;98(3):533-540 - clinical relevance of plasma iron species in overload states (DOI: 10.1002/ajh.26819)

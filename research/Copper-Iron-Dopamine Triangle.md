@@ -24,6 +24,43 @@ permalink: research/copper-iron-dopamine-triangle
 
 The existing [[Copper-Zinc-Iron Interactions]] note covers absorption competition and the vicious cycle. This note goes deeper into the **neurobiochemical triangle** connecting copper, iron, and catecholamine synthesis in the brain.
 
+> [!info]- Colour Key
+> 🟢 Enzyme | 🔵 Molecule | 🔴 Disruption
+
+```mermaid
+flowchart LR
+    TYR["Tyrosine"]
+    TH["TH - Iron-dependent"]
+    LDOPA["L-DOPA"]
+    DDC["DOPA Decarboxylase - B6"]
+    DA["Dopamine"]
+    DBH["DBH - Copper-dependent"]
+    NE["Norepinephrine"]
+
+    TYR --> TH --> LDOPA --> DDC --> DA --> DBH --> NE
+
+    subgraph Disruption["Iron Overload Disruption"]
+        FE_EXCESS["Iron Overload"]
+        CU_LOW["Low Copper"]
+        DBH_IMPAIR["Impaired DBH"]
+        IMBALANCE["Catecholamine Imbalance"]
+    end
+
+    FE_EXCESS -->|"Suppresses absorption"| CU_LOW
+    CU_LOW -->|"Reduces activity"| DBH_IMPAIR
+    DBH_IMPAIR -->|"DA high, NE low"| IMBALANCE
+
+    DBH_IMPAIR -.->|"Blocks conversion"| DBH
+
+    classDef enzyme fill:#4a6a4a,stroke:#333,color:#fff
+    classDef molecule fill:#2a5a8a,stroke:#333,color:#fff
+    classDef disruption fill:#8b0000,stroke:#333,color:#fff
+
+    class TH,DDC,DBH enzyme
+    class TYR,LDOPA,DA,NE molecule
+    class FE_EXCESS,CU_LOW,DBH_IMPAIR,IMBALANCE disruption
+```
+
 ## The Three Vertices
 
 ### Vertex 1: Iron -> Dopamine Synthesis

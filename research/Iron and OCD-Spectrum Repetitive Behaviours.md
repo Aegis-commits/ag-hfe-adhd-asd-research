@@ -25,6 +25,48 @@ permalink: research/iron-and-ocd-spectrum-repetitive-behaviours
 
 The basal ganglia — particularly the globus pallidus, caudate nucleus, and putamen — have the **highest iron concentrations of any brain structures**. These same structures are consistently implicated in OCD, trichotillomania, and other repetitive behaviour disorders.
 
+> [!info]- Colour Key
+> 🔵 Circuit | 🔴 Damage | 🟣 Outcome | 🟢 Protective
+
+```mermaid
+flowchart TD
+    A[Cortex] -->|Excitatory| B[Striatum]
+    B -->|GABAergic| C[Globus Pallidus]
+    C -->|GABAergic| D[Thalamus]
+    D -->|Excitatory| A
+
+    E[HFE Iron Overload] --> F[Basal Ganglia Iron Deposition]
+    F --> G[Caudate / Putamen]
+    F --> H[Globus Pallidus]
+
+    G --> I[Local ROS Generation]
+    H --> I
+    I --> J[GSH Depletion]
+    I --> K[Dopamine Receptor Disruption]
+    J --> L[Disrupted CSTC Gating]
+    K --> L
+
+    L --> M[Repetitive Behaviours]
+    M --> N[OCD]
+    M --> O[Trichotillomania]
+    M --> P[Autistic Stereotypies]
+
+    Q[NAC] -.-> R[Glutathione Repletion]
+    Q -.-> S[Glutamate Modulation]
+    R -.->|Protective| J
+    S -.->|Protective| L
+
+    classDef circuit fill:#4a7c8f,stroke:#2d4f5c,color:#fff
+    classDef damage fill:#8f4a4a,stroke:#5c2d2d,color:#fff
+    classDef outcome fill:#6b4a8f,stroke:#3f2d5c,color:#fff
+    classDef protect fill:#4a8f5c,stroke:#2d5c3f,color:#fff
+
+    class A,B,C,D circuit
+    class E,F,G,H,I,J,K,L damage
+    class M,N,O,P outcome
+    class Q,R,S protect
+```
+
 ## Iron in OCD
 
 ### MRI Evidence

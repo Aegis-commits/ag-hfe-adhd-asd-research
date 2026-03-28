@@ -36,6 +36,44 @@ This does **not** prove ceruloplasmin dysfunction, but it supports a biologicall
 2. Ceruloplasmin/hephaestin oxidize Fe2+ to Fe3+
 3. Fe3+ binds transferrin
 
+> [!info]- Colour Key
+> 🟢 Normal / safe | 🔴 Impaired / risk
+
+```mermaid
+flowchart LR
+    subgraph Normal["Normal Pathway"]
+        FPN["Ferroportin exports Fe2+"]
+        CP["Ceruloplasmin oxidises"]
+        FE3["Fe3+ formed"]
+        TF["Fe3+ binds transferrin"]
+        SAFE["Safe transport"]
+    end
+
+    subgraph Impaired["Low Ceruloplasmin"]
+        FPN2["Ferroportin exports Fe2+"]
+        LOW["Ceruloplasmin insufficient"]
+        FE2["Fe2+ accumulates"]
+        NTBI["NTBI in plasma"]
+        TOX["Oxidative damage"]
+    end
+
+    FPN --> CP
+    CP --> FE3
+    FE3 --> TF
+    TF --> SAFE
+
+    FPN2 --> LOW
+    LOW --> FE2
+    FE2 --> NTBI
+    NTBI --> TOX
+
+    classDef normal fill:#6b8f71,stroke:#4a6b4f,color:#fff
+    classDef impaired fill:#b06272,stroke:#8a4252,color:#fff
+
+    class FPN,CP,FE3,TF,SAFE normal
+    class FPN2,LOW,FE2,NTBI,TOX impaired
+```
+
 When ferroxidase support is poor, efficient iron export/handling is compromised.
 
 ## Evidence Base

@@ -29,18 +29,22 @@ When inflammation is present, the enzyme **indoleamine 2,3-dioxygenase (IDO)** i
 
 ## The Pathway
 
+> [!info]- Colour Key
+> 🟣 Source | 🟢 Protective | 🔴 Risk / damage
+
 ```mermaid
-graph TD
-    A[Tryptophan] -->|IDO activated by inflammation| B[Kynurenine]
-    A -->|Tryptophan hydroxylase| C[5-HTP → Serotonin]
+flowchart TD
+    classDef source fill:#f9f,stroke:#333,color:#000
+    classDef protect fill:#9f9,stroke:#333,color:#000
+    classDef danger fill:#f99,stroke:#333,color:#000
+
+    A[Tryptophan]:::source -->|IDO activated by inflammation| B[Kynurenine]
+    A -->|Tryptophan hydroxylase| C[5-HTP then Serotonin]:::protect
     C --> D[Melatonin]
-    B --> E[3-Hydroxykynurenine → neurotoxic]
-    B --> F[Kynurenic acid → neuroprotective]
-    E --> G[Quinolinic acid → NMDA agonist → excitotoxicity]
-    G --> H[↑ Glutamate → repetitive behaviours]
-    style A fill:#f9f,stroke:#333
-    style C fill:#9f9,stroke:#333
-    style G fill:#f99,stroke:#333
+    B --> E[3-Hydroxykynurenine - neurotoxic]
+    B --> F[Kynurenic acid - neuroprotective]:::protect
+    E --> G[Quinolinic acid - NMDA agonist]:::danger
+    G --> H[Glutamate excess - repetitive behaviours]
 ```
 
 ## Evidence in Autism

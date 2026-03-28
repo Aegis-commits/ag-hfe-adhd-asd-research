@@ -24,6 +24,39 @@ permalink: research/iron-glutamate-and-excitotoxicity
 
 Iron does not merely coexist with glutamate signalling — it directly drives **extracellular glutamate accumulation** through the System Xc- cystine/glutamate antiporter. This is one of the most mechanistically important and underappreciated connections in iron neurotoxicity.
 
+> [!info]- Colour Key
+> 🔴 Pathological | 🟢 Protective | 🔵 Neutral
+
+```mermaid
+flowchart TD
+    A["Iron Overload"] --> B["Oxidative Stress"]
+    B --> C["System Xc- Upregulated"]
+    C --> D["Cystine Imported"]
+    C --> E["Glutamate Exported"]
+    D --> F["GSH Synthesis"]
+    F --> G["Antioxidant Defence"]
+    E --> H["Extracellular Glutamate Excess"]
+    H --> I["NMDA Receptor Overactivation"]
+    I --> J["Excitotoxicity"]
+    J --> K["Calcium Influx"]
+    K --> L["Mitochondrial Damage"]
+    L --> M["Iron Released"]
+    M --> A
+
+    N["NAC"] -.-> O["Cysteine Supply"]
+    O -.-> F
+    N -.-> P["Bypasses System Xc-"]
+    P -.-> Q["Reduced Glutamate Release"]
+
+    classDef pathological fill:#c44,color:#fff,stroke:#911
+    classDef protective fill:#4a8,color:#fff,stroke:#276
+    classDef neutral fill:#58c,color:#fff,stroke:#247
+
+    class A,B,E,H,I,J,K,L,M pathological
+    class F,G,N,O,P,Q protective
+    class C,D neutral
+```
+
 ## The System Xc- Mechanism
 
 The **cystine/glutamate antiporter (System Xc-)** imports one molecule of cystine while exporting one molecule of glutamate. It is encoded by the gene **SLC7A11 (xCT)**.

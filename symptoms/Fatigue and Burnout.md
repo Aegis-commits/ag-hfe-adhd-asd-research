@@ -20,6 +20,32 @@ permalink: symptoms/fatigue-and-burnout
 
 # Fatigue and Burnout
 
+## Convergence Model
+
+> [!info]- Colour Key
+> 🟠 Pathological | 🔵 Neuro | 🔴 Outcome
+
+```mermaid
+flowchart TD
+    A[NTBI / ROS] -->|oxidative stress| F[Fatigue]
+    B[Autistic Burnout] -->|masking cost| F
+    C[Sleep Disruption] -->|circadian misalignment| F
+    D[Low Testosterone] -->|pituitary iron deposition| F
+    E[Low Cu / Zn] -->|impaired enzymes| F
+    G[Dopamine Dysfunction] -->|depleted DA/NE| F
+    F --> H[Reduced Capacity]
+    H --> I[Increased Masking Load]
+    I --> B
+
+    classDef pathological fill:#c96,stroke:#633,color:#000
+    classDef neuro fill:#69a,stroke:#346,color:#000
+    classDef outcome fill:#966,stroke:#633,color:#000
+
+    class A,D,E pathological
+    class B,C,G neuro
+    class F,H,I outcome
+```
+
 ## Symptom Context
 - Extreme fatigue
 - Burnout pattern

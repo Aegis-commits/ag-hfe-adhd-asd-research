@@ -24,6 +24,41 @@ permalink: iron-metabolism/transferrin-saturation-clinical-significance
 
 This is the single most concerning result in your [[Blood Results - March 2026|blood work]].
 
+> [!info]- Colour Key
+> 🟢 Normal / safe | 🟠 Caution | 🔴 Risk / danger | 🔵 Action
+
+```mermaid
+flowchart TD
+    subgraph Ranges["TSAT Ranges"]
+        NORM["20-45%: Normal range"]
+        ELEV["45-60%: Elevated"]
+        HIGH["Above 60%: High risk"]
+    end
+
+    NORM --> SAFE["No NTBI expected"]
+    SAFE --> ROUTINE["Routine monitoring"]
+
+    ELEV --> THRESH["NTBI generation threshold"]
+    THRESH --> INVEST["Investigate: iron studies"]
+    INVEST --> DIET["Dietary modification"]
+
+    HIGH --> NTBI["NTBI likely present"]
+    NTBI --> ORGAN["Organ damage risk"]
+    ORGAN --> PHLEB["Phlebotomy indicated"]
+    ORGAN --> MRI["Hepatic iron MRI"]
+    ORGAN --> MONITOR["3-6 month monitoring"]
+
+    classDef safe fill:#6b8f71,stroke:#4a6b4f,color:#fff
+    classDef caution fill:#c4956a,stroke:#9a7550,color:#fff
+    classDef danger fill:#b06272,stroke:#8a4252,color:#fff
+    classDef action fill:#4a6fa5,stroke:#2d4a7a,color:#fff
+
+    class NORM,SAFE,ROUTINE safe
+    class ELEV,THRESH,INVEST,DIET caution
+    class HIGH,NTBI,ORGAN danger
+    class PHLEB,MRI,MONITOR action
+```
+
 ## What Transferrin Saturation Means
 
 Transferrin is the blood protein that safely transports iron. Under normal conditions, only 20-50% of transferrin's iron-binding sites are occupied. When saturation rises above ~45-50%, the system begins to overflow.

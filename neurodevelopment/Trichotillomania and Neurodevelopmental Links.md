@@ -213,10 +213,10 @@ Anthony tried CBT for trich before knowing about his AuDHD. Standard Habit Rever
 ## Summary Model
 
 ```mermaid
-graph TD
-    A[ADHD-PI: Low dopamine] --> B[Understimulation / Dysregulation]
-    C[Autism: Sensory needs] --> B
-    D[HFE: Iron overload] --> E[Basal ganglia iron disruption]
+flowchart TD
+    A[ADHD-PI - Low dopamine] --> B[Understimulation / Dysregulation]
+    C[Autism - Sensory needs] --> B
+    D[HFE - Iron overload] --> E[Basal ganglia iron disruption]
     D --> F[Impaired glutathione / oxidative stress]
     E --> G[Cortico-striatal circuit dysfunction]
     F --> H[Excess synaptic glutamate]

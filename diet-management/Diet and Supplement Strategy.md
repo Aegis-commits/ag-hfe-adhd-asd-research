@@ -22,6 +22,48 @@ permalink: diet-management/diet-and-supplement-strategy
 
 # Diet and Supplement Strategy
 
+## Treatment Hierarchy
+
+> [!info]- Colour Key
+> 🟠 Tier 1 | 🔵 Tier 2 | 🟢 Tier 3 | 🟤 Monitor
+
+```mermaid
+flowchart TD
+    subgraph T1["Tier 1 - Foundation"]
+        P[Phlebotomy] --> R1[Reduce Iron Load]
+        DI[Iron-Reducing Diet] --> R1
+    end
+
+    subgraph T2["Tier 2 - Core Supplements"]
+        NAC[NAC 1200-2400mg] --> R2[Antioxidant + TTM]
+        VD[Vitamin D3 + K2] --> R3[Immune + Hepcidin]
+        PRO[Probiotics] --> R4[Gut Recolonisation]
+    end
+
+    subgraph T3["Tier 3 - Targeted Support"]
+        INO[Inositol] --> R5[TTM Adjunct]
+        MF[Methylfolate] --> R6[MTHFR Support]
+        MIN[Zn + Mg Optimisation] --> R7[Enzyme Cofactors]
+    end
+
+    R1 -.->|enables| R4
+    R1 -.->|improves| MIN
+
+    MON[Quarterly Bloods] -.->|adjust| P
+    MON -.->|adjust| NAC
+    MON -.->|adjust| VD
+
+    classDef tier1 fill:#c96,stroke:#633,color:#000
+    classDef tier2 fill:#69a,stroke:#346,color:#000
+    classDef tier3 fill:#6a9,stroke:#364,color:#000
+    classDef monitor fill:#999,stroke:#444,color:#000
+
+    class P,DI,R1 tier1
+    class NAC,VD,PRO,R2,R3,R4 tier2
+    class INO,MF,MIN,R5,R6,R7 tier3
+    class MON monitor
+```
+
 ## Current Supplement Stack — Review
 
 ### What Anthony Currently Takes

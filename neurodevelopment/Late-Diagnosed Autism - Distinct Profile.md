@@ -22,6 +22,41 @@ permalink: neurodevelopment/late-diagnosed-autism-distinct-profile
 
 Recent large-scale genetic research (2025) demonstrates that late-diagnosed autism is not simply "mild autism missed" — it represents a **biologically distinct subtype** with its own genetic architecture, comorbidity profile, and developmental trajectory.
 
+## Diagnostic Pathway and Subtypes
+
+> [!info]- Colour Key
+> 🔵 Subtype | ⚫ Timing | 🟣 Pathway | 🟡 Link
+
+```mermaid
+flowchart TD
+    W[Warrier 2025 - Four Subtypes] --> S1[Broadly Affected]
+    W --> S2[Moderately Affected]
+    W --> S3[Social/Behavioural]
+    W --> S4[Psychiatric Comorbidity]
+
+    S1 --> T1[Early Childhood Dx]
+    S2 --> T2[Variable Timing]
+    S3 --> T3[Later Diagnosis]
+    S4 --> T4[Adolescence/Adulthood Dx]
+
+    P1[Childhood ADHD Dx] --> P2[Masking/Camouflaging]
+    P2 --> P3[Autistic Traits Hidden]
+    P3 --> P4[Stimulant Unmasking]
+    P4 --> P5[Late Autism Dx]
+    P5 --> P6[Autistic Burnout Risk]
+
+    S4 -.-> P1
+
+    classDef subtype fill:#4a6f8a,stroke:#2d4a5a,color:#fff
+    classDef timing fill:#6b6b6b,stroke:#444,color:#fff
+    classDef pathway fill:#7a5c6a,stroke:#4d3a42,color:#fff
+    classDef link fill:#8a7a4a,stroke:#5a4d2d,color:#fff
+
+    class W,S1,S2,S3,S4 subtype
+    class T1,T2,T3,T4 timing
+    class P1,P2,P3,P4,P5,P6 pathway
+```
+
 ## The Princeton/Simons Foundation Study (2025)
 
 Warrier V et al. *Nature* 2025 (SPARK cohort, n=18,965; iPSYCH cohort, n=28,165)

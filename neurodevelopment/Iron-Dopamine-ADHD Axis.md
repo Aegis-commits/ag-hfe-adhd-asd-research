@@ -21,6 +21,41 @@ permalink: neurodevelopment/iron-dopamine-adhd-axis
 
 # The Iron-Dopamine-ADHD Axis
 
+## Pathway Overview
+
+> [!info]- Colour Key
+> 🔵 Pathway | 🟤 HFE / iron | 🟣 Deficit | ⚫ Outcome
+
+```mermaid
+flowchart TD
+    A[Tyrosine] -->|TH + Fe2+ + BH4| B[L-DOPA]
+    B -->|DOPA decarboxylase| C[Dopamine]
+    D[Iron - TH Cofactor] --> A
+
+    E[HFE C282Y/H63D] --> F[Brain Iron Dysregulation]
+    F --> G[Regional Maldistribution]
+    G --> H[Paradoxical DA Dysfunction]
+    H --> I[ADHD Symptoms]
+
+    J[Iron Deficiency] --> K[Reduced TH Activity]
+    K --> L[Low Dopamine Synthesis]
+    L --> I
+
+    G --> M[Oxidative Stress]
+    M --> N[Neuronal Damage]
+
+    classDef pathway fill:#4a7c8a,stroke:#2d4f5a,color:#fff
+    classDef hfe fill:#8a5c4a,stroke:#5a3d2d,color:#fff
+    classDef outcome fill:#6b6b6b,stroke:#444,color:#fff
+    classDef deficit fill:#7a6a8a,stroke:#4d3f5a,color:#fff
+
+    class A,B,C,D pathway
+    class E,F,G,H hfe
+    class I,N outcome
+    class J,K,L deficit
+    class M hfe
+```
+
 ## The Biochemical Connection
 
 Iron is not just about haemoglobin. It is a critical cofactor for **tyrosine hydroxylase** — the rate-limiting enzyme in dopamine synthesis:

@@ -22,6 +22,43 @@ permalink: neurodevelopment/hfe-variants-and-brain-iron
 ## Key Point
 HFE variants are not just liver/iron-panel variants. They can influence brain iron distribution and neurobiology.
 
+## Pathway Overview
+
+> [!info]- Colour Key
+> 🟤 HFE | 🔵 Brain region | 🟣 Effect | ⚫ Outcome
+
+```mermaid
+flowchart TD
+    A[HFE C282Y/H63D] --> B[Altered Brain Iron Handling]
+    B --> C[Regional Iron Accumulation]
+
+    C --> D[Basal Ganglia]
+    C --> E[Substantia Nigra]
+
+    D --> F[Dopamine Dysregulation]
+    E --> F
+
+    B --> G[Impaired Myelination]
+    B --> H[Oxidative Stress]
+
+    H --> I[ROS Generation]
+    I --> J[Neuronal Vulnerability]
+
+    F --> K[ADHD Symptoms]
+    G --> L[Cognitive Effects]
+    J --> L
+
+    classDef hfe fill:#8a5c4a,stroke:#5a3d2d,color:#fff
+    classDef region fill:#4a7c8a,stroke:#2d4f5a,color:#fff
+    classDef effect fill:#7a6a8a,stroke:#4d3f5a,color:#fff
+    classDef outcome fill:#6b6b6b,stroke:#444,color:#fff
+
+    class A,B hfe
+    class C,D,E region
+    class F,G,H,I,J effect
+    class K,L outcome
+```
+
 ## Evidence
 - Kalpouzos G et al. *Neuropsychopharmacol Rep* 2021;41(3):393-404 (PMC8411306)
   - C282Y and/or H63D carriage associated with altered blood and brain iron measures

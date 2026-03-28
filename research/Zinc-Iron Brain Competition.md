@@ -22,6 +22,47 @@ permalink: research/zinc-iron-brain-competition
 
 # Zinc and Iron Competition at Brain Level
 
+> [!info]- Colour Key
+> 🔴 Overload | 🟢 Transport | 🔵 Consequence
+
+```mermaid
+flowchart TD
+    subgraph Transport["Transporter Competition"]
+        DMT1["DMT1 Transporter"]
+        ZIP["ZIP8 / ZIP14 Transporters"]
+        FE_IN["Iron Uptake"]
+        ZN_IN["Zinc Uptake"]
+    end
+
+    FE_OVER["Iron Overload"]
+
+    subgraph Synaptic["Synaptic Consequences"]
+        LOW_ZN["Low Synaptic Zinc"]
+        SHANK["SHANK Protein Dysfunction"]
+        NMDA["NMDA Receptor Dysregulation"]
+        EI["E/I Imbalance"]
+        ASD["Autism-Relevant Effects"]
+    end
+
+    FE_OVER --> DMT1
+    FE_OVER --> ZIP
+    DMT1 --> FE_IN
+    DMT1 -.->|"Displaces"| ZN_IN
+    ZIP --> FE_IN
+    ZIP -.->|"Displaces"| ZN_IN
+
+    ZN_IN -.->|"Reduced"| LOW_ZN
+    LOW_ZN --> SHANK --> NMDA --> EI --> ASD
+
+    classDef overload fill:#8b0000,stroke:#333,color:#fff
+    classDef transport fill:#4a6a4a,stroke:#333,color:#fff
+    classDef consequence fill:#4a4a8a,stroke:#333,color:#fff
+
+    class FE_OVER overload
+    class DMT1,ZIP,FE_IN,ZN_IN transport
+    class LOW_ZN,SHANK,NMDA,EI,ASD consequence
+```
+
 ## Beyond Gut Absorption
 
 The [[Copper-Zinc-Iron Interactions]] note covers intestinal absorption competition. This note focuses on **brain-level zinc-iron interactions** — including transport, neurotransmitter modulation, and direct relevance to autism and ADHD.

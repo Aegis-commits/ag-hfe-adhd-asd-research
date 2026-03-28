@@ -128,114 +128,142 @@ The following findings were verified against PubMed and OpenAlex on 2026-03-22, 
 
 ## Key Themes Across Notes
 
+### 1. Iron Overload Cascade
+
+> [!info] How HFE drives downstream damage through five pathways.
+> **Colour key:** 🟣 Genetics | 🔴 Iron pathway / mechanism | 🟡 Symptom endpoint
+
 ```mermaid
-graph LR
-    %% === GENETICS & IRON ===
-    A[HFE C282Y/H63D] --> B[Iron Overload]
-    B --> C[NTBI / Oxidative Stress]
-    B --> D[Suppressed Cu/Zn]
-    B --> N[Gut Dysbiosis]
-    C --> E[Fatigue]
-    C --> F[Joint Damage]
-    C --> O[IDO Activation]
-    O --> P[Kynurenine ↑ / Serotonin ↓]
-    P --> Q[Trichotillomania]
-    P --> R[Poor Sleep]
-    D --> G[Impaired DBH]
-    G --> H[ADHD Symptoms]
-    B --> I[Brain Iron ↑]
-    I --> H
-    I --> S[Basal Ganglia Disruption]
-    S --> Q
-    I --> AA[Impaired Myelination]
-    AA --> H
-    C --> AB[GSH Depletion]
-    AB --> AC[Ferroptosis Risk]
-    AB --> AD[Glutamate Excess]
-    AD --> Q
+flowchart LR
+    classDef gen fill:#e8daef,stroke:#7d3c98,color:#2c0735
+    classDef iron fill:#fadbd8,stroke:#c0392b,color:#4a0e0e
+    classDef out fill:#f9e79f,stroke:#f39c12,color:#4a3000
 
-    %% === MEDICATION ===
-    J[Elvanse 70mg] --> K[Appetite Effects]
-    K --> D
-    J --> T[Autistic Unmasking]
-    J --> R
+    A[HFE C282Y / H63D]:::gen --> B[Iron Overload]:::iron
+    B --> C[NTBI / Oxidative Stress]:::iron
+    B --> D[Suppressed Cu / Zn]:::iron
+    B --> I[Brain Iron]:::iron
+    B --> N[Gut Dysbiosis]:::iron
+    B --> AW[Pituitary Iron]:::iron
 
-    %% === MANAGEMENT ===
-    L[Diet Changes] --> B
-    M[Phlebotomy?] --> B
+    C --> E[Fatigue]:::out
+    C --> F[Joint Damage]:::out
+    C --> GSH[GSH Depletion]:::iron
+    GSH --> FPT[Ferroptosis Risk]:::out
+    GSH --> GLU[Glutamate Excess]:::out
 
-    %% === NEURODEVELOPMENT ===
-    U[Late Autism Dx] --> V[Masking Cost]
-    V --> E
-    W[ADHD-PI] --> X[Internal Hyperactivity]
-    X --> Y[Understimulation]
-    Y --> Q
-    N --> P
-    D --> AE[Low Synaptic Zinc]
-    AE --> AF[NMDA/SHANK Dysfunction]
-    AF --> AG[Autism Symptoms]
+    D --> DBH[Impaired DBH]:::iron
+    D --> ZN[Low Synaptic Zinc]:::iron
+    DBH --> ADHD[ADHD Symptoms]:::out
+    ZN --> ASD[Autism Symptoms]:::out
 
-    %% === SLEEP HUB — Central Amplifier ===
-    R --> AC
-    R --> AH[↓ Glymphatic Clearance]
-    AH --> I
-    R --> AI[Gut Dysbiosis from Sleep Loss]
-    AI --> O
-    R --> AJ[↓ PFC / Executive Function]
-    AJ --> Q
-    AJ --> H
-    R --> AK[DA Receptor Downregulation]
-    AK --> H
-    R --> AL[↑ Sensory Reactivity]
-    AL --> AG
-    AL --> R
-    R --> AM[↑ Cortisol / HPA Axis]
-    AM --> O
-    AM --> B
-    H --> R
-    V --> R
-    X --> R
-    AG --> R
+    I --> BG[Basal Ganglia Disruption]:::iron
+    I --> MY[Impaired Myelination]:::iron
+    I --> INS[Insula Iron Deposition]:::iron
+    BG --> TTM[Trichotillomania]:::out
+    MY --> ADHD
+    INS --> INT[Low Interoception]:::out
 
-    %% === INTEROCEPTION ===
-    I --> AQ[Insula Iron Deposition]
-    AQ --> AR[↓ Interoceptive Accuracy]
-    AR --> AS[Urge Detection Failure]
-    AS --> Q
-    AR --> AT[Poor Burnout Detection]
-    AT --> E
-    AR --> AU[Hunger Unawareness]
-    K --> AU
+    N --> IDO[IDO Activation]:::iron
+    IDO --> KYN[Kynurenine / Serotonin]:::iron
+    KYN --> TTM
+    KYN --> SLP[Poor Sleep]:::out
 
-    %% === AUTONOMIC / VAGAL ===
-    AG --> AV[↓ Vagal Tone]
-    AV --> N
-    AV --> AL
-    H --> AV
+    AW --> TEST[Low Testosterone]:::out
+```
 
-    %% === ENDOCRINE ===
-    B --> AW[Pituitary Iron]
-    AW --> AX[↓ Testosterone / LH]
-    AX --> E
-    B --> AY[↓ Insulin Sensitivity]
+### 2. Sleep as Central Amplifier
 
-    %% === EXERCISE (Protective) ===
-    BA[Exercise] --> I
-    BA --> AK
-    BA --> R
-    BA --> N
-    BA --> AC
+> [!warning] Poor sleep feeds back into every other system, creating vicious cycles.
+> **Colour key:** 🔵 Sleep mechanism | 🔴 Feeds back into iron/inflammation | 🟡 Symptom endpoint
 
-    %% === INTERVENTIONS ===
-    AN[Melatonin] --> R
-    AO[Chronotherapy] --> R
-    AP[Sensory Optimisation] --> AL
-    BB[NAC] --> AB
-    BB --> AC
-    BB --> AD
-    BB --> Q
-    M --> AW
-    M --> AX
+```mermaid
+flowchart TD
+    classDef sleep fill:#d6eaf8,stroke:#2980b9,color:#0a2740
+    classDef out fill:#f9e79f,stroke:#f39c12,color:#4a3000
+    classDef feed fill:#fadbd8,stroke:#c0392b,color:#4a0e0e
+
+    R[Poor Sleep]:::sleep
+
+    R --> AH[Low Glymphatic Clearance]:::sleep
+    R --> AI[Gut Dysbiosis]:::sleep
+    R --> AJ[Low Executive Function]:::sleep
+    R --> AK[DA Receptor Downregulation]:::sleep
+    R --> AL[Sensory Amplification]:::sleep
+    R --> AM[High Cortisol / HPA]:::sleep
+    R --> FPT[Ferroptosis Acceleration]:::sleep
+
+    AH -->|iron accumulates| BI[Brain Iron]:::feed
+    AI -->|inflammation| IDO[IDO Activation]:::feed
+    AM -->|inflammation| IDO
+    AJ --> ADHD[ADHD Symptoms]:::out
+    AJ --> TTM[Trichotillomania]:::out
+    AK --> ADHD
+    AL --> ASD[Autism Symptoms]:::out
+
+    %% What drives poor sleep
+    ADHD -->|hyperarousal| R
+    ASD -->|sensory| R
+    MASK[Masking Cost]:::out -->|burnout| R
+    HYP[Internal Hyperactivity]:::out --> R
+    ELV[Elvanse]:::out -->|stimulant| R
+    AL -.->|sensory loop| R
+```
+
+### 3. Interventions and Targets
+
+> [!tip] Dotted lines show protective effects.
+> **Colour key:** 🟢 Intervention | 🟠 Medication | 🔴 Target / problem
+
+```mermaid
+flowchart LR
+    classDef protect fill:#a9dfbf,stroke:#1e8449,color:#0a2f14
+    classDef med fill:#fdebd0,stroke:#e67e22,color:#4a2600
+    classDef target fill:#fadbd8,stroke:#c0392b,color:#4a0e0e
+
+    subgraph TREAT ["Treatment"]
+        M[Phlebotomy]:::protect
+        L[Diet Changes]:::protect
+        BA[Exercise]:::protect
+        BB[NAC]:::protect
+        AN[Melatonin]:::protect
+        AO[Chronotherapy]:::protect
+        AP[Sensory Optimisation]:::protect
+    end
+
+    subgraph MEDS ["Medication"]
+        J[Elvanse 70mg]:::med
+    end
+
+    %% Phlebotomy targets
+    M -.-> IO[Iron Overload]:::target
+    M -.-> PIT[Pituitary Iron]:::target
+    M -.-> TEST[Low Testosterone]:::target
+
+    %% Diet targets
+    L -.-> IO
+
+    %% Exercise targets
+    BA -.-> BI[Brain Iron]:::target
+    BA -.-> DA[DA Downregulation]:::target
+    BA -.-> SLP[Poor Sleep]:::target
+    BA -.-> GUT[Gut Dysbiosis]:::target
+
+    %% NAC targets
+    BB -.-> GSH[GSH Depletion]:::target
+    BB -.-> FPT[Ferroptosis]:::target
+    BB -.-> GLU[Glutamate Excess]:::target
+    BB -.-> TTM[Trichotillomania]:::target
+
+    %% Sleep interventions
+    AN -.-> SLP
+    AO -.-> SLP
+    AP -.-> SENS[Sensory Reactivity]:::target
+
+    %% Elvanse effects
+    J --> APP[Appetite Suppression]:::med
+    APP -.-> CUZN[Cu / Zn Depletion]:::target
+    J --> UNMASK[Autistic Unmasking]:::med
 ```
 
 ## Citation Summary

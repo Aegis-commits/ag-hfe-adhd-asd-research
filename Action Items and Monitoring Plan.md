@@ -19,6 +19,52 @@ permalink: action-items-and-monitoring-plan
 
 # Action Items and Monitoring Plan
 
+## Priority Cascade
+
+> [!info]- Colour Key
+> 🟠 Immediate | 🔵 Short-Term | 🟢 Ongoing | 🟤 Gate
+
+```mermaid
+flowchart TD
+    subgraph Immediate
+        GP[GP Appointment] --> PHB[Phlebotomy Referral]
+        GP --> MRI[Hepatic Iron MRI]
+        GP --> GENE[Extended Iron Gene Panel]
+    end
+
+    subgraph ST["Short-Term - 1-3 Months"]
+        ENDO[Endocrine Panel]
+        PHARM[Pharmacogenomics / MTHFR]
+        XRAY[Hand + Spine Imaging]
+        VITD[Vitamin D Test]
+    end
+
+    subgraph Ongoing
+        QB[Quarterly Bloods] --> FTRK[Ferritin + TSAT Tracking]
+        SR[Supplement Review] --> ADJ[Dose Adjustments]
+        AN[Annual Full Panel]
+    end
+
+    MRI -->|confirms overload| PHB
+    PHB -->|Hb adequate?| D1{Decision Gate}
+    D1 -->|Yes| START[Begin Phlebotomy]
+    D1 -->|No| WAIT[Defer + Recheck]
+
+    FTRK -->|target met?| D2{Decision Gate}
+    D2 -->|Ferritin 50-100| MAINT[Maintenance Phase]
+    D2 -->|Still elevated| PHB
+
+    classDef immediate fill:#c96,stroke:#633,color:#000
+    classDef shortterm fill:#69a,stroke:#346,color:#000
+    classDef ongoing fill:#6a9,stroke:#364,color:#000
+    classDef gate fill:#999,stroke:#444,color:#000
+
+    class GP,PHB,MRI,GENE immediate
+    class ENDO,PHARM,XRAY,VITD shortterm
+    class QB,SR,AN,FTRK,ADJ ongoing
+    class D1,D2 gate
+```
+
 ## Priority Assessment
 
 Based on synthesis across all research notes, your situation is:

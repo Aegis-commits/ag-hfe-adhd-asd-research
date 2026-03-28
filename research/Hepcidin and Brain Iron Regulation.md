@@ -24,6 +24,48 @@ Hepcidin is the master regulator of systemic iron. But the brain has its **own l
 
 This means: **systemic iron overload and brain iron status can diverge**.
 
+> [!info]- Colour Key
+> 🔵 Systemic | 🟢 Brain | 🔴 Pathological
+
+```mermaid
+flowchart TD
+    subgraph Systemic
+        A["Liver"] --> B["Systemic Hepcidin"]
+        B --> C["Ferroportin Degradation"]
+        C --> D["Controls Body Iron Export"]
+    end
+
+    subgraph Brain
+        E["Astrocytes"] --> F["Brain Hepcidin"]
+        F --> G["BBB Ferroportin Regulation"]
+        G --> H["Brain Iron Gating"]
+    end
+
+    I["Inflammation"] --> B
+    I --> F
+    I --> J["Disrupts Both Systems"]
+
+    J --> K["Systemic: Low Hepcidin"]
+    K --> L["Uncontrolled Iron Absorption"]
+    J --> M["Brain: High Hepcidin"]
+    M --> N["Iron Trapped in Cells"]
+    N --> O["Neuronal Iron Excess"]
+
+    P["HFE Variants"] --> Q["Impaired Iron Sensing"]
+    Q --> K
+    Q --> R["BBB Gate Dysfunction"]
+    R --> O
+
+    classDef systemic fill:#58c,color:#fff,stroke:#247
+    classDef brain fill:#7a5,color:#fff,stroke:#463
+    classDef pathological fill:#c44,color:#fff,stroke:#911
+    classDef neutral fill:#888,color:#fff,stroke:#555
+
+    class A,B,C,D systemic
+    class E,F,G,H brain
+    class I,J,K,L,M,N,O,P,Q,R pathological
+```
+
 ## Brain Hepcidin Sources
 
 Two sources of hepcidin affect the brain:

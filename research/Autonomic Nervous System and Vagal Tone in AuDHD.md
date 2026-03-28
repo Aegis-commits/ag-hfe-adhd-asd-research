@@ -38,6 +38,46 @@ Related notes: [[Iron and Oxidative Stress in Autism]], [[Poor Sleep and AuDHD-H
 
 ---
 
+> [!info]- Colour Key
+> 🔵 Condition | 🟡 Burden | 🔴 Outcome | 🟢 Protective
+
+```mermaid
+flowchart TD
+    A[Autism] --> B[Parasympathetic Underactivation]
+    C[ADHD] --> D[Impaired Autonomic Flexibility]
+    E[Elvanse 70mg] --> F[Sympathetic Drive Increase]
+    G[HFE Iron Overload] --> H[Autonomic Nerve Oxidative Damage]
+
+    B --> I[Converging Autonomic Burden]
+    D --> I
+    F --> I
+    H --> I
+
+    I --> J[Low Vagal Tone / Reduced HRV]
+
+    J --> K[Gut Dysbiosis]
+    J --> L[Sensory Reactivity]
+    J --> M[Emotional Dysregulation]
+
+    K --> N[Vagal Afferent Inflammation]
+    L --> O[Lowered Sensory Threshold]
+    M --> P[Meltdowns / Shutdowns]
+
+    Q[HRV Biofeedback] -.-> J
+    R[Slow Breathing 6/min] -.-> J
+    S[Cold-Water Face Immersion] -.-> J
+
+    classDef condition fill:#4a7c8f,stroke:#2d4f5c,color:#fff
+    classDef burden fill:#8f7a4a,stroke:#5c4f2d,color:#fff
+    classDef outcome fill:#8f4a4a,stroke:#5c2d2d,color:#fff
+    classDef protect fill:#4a8f5c,stroke:#2d5c3f,color:#fff
+
+    class A,B,C,D,E,F,G,H condition
+    class I,J burden
+    class K,L,M,N,O,P outcome
+    class Q,R,S protect
+```
+
 ## 1. Vagal Tone in Autism -- Polyvagal Theory and HRV Findings
 
 ### 1.1 Cheng YC, Huang YC, Huang WL

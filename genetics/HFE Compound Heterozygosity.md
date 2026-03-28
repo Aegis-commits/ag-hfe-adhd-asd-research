@@ -28,6 +28,43 @@ You carry one copy of each major HFE variant:
 
 This makes you a **compound heterozygote**, distinct from C282Y homozygotes who carry the highest risk.
 
+> [!info]- Colour Key
+> 🔵 Consensus | 🟠 Emerging evidence | 🟢 Clinical decision | 🔴 Genotype-phenotype gap
+
+```mermaid
+flowchart TD
+    GENO["C282Y/H63D Genotype"] --> CONS["Low-risk consensus"]
+    GENO --> EMERGE["Emerging evidence"]
+
+    CONS --> GUIDE["Guidelines: no family screening"]
+    CONS --> STATS["3.5% penetrance in males"]
+
+    EMERGE --> SUBSET["Subset loads iron"]
+    EMERGE --> MODIFY["Genetic modifiers"]
+    EMERGE --> PHENO["Phenotype matters more"]
+
+    SUBSET --> DECISION{Clinical Decision}
+    PHENO --> DECISION
+
+    DECISION --> MONITOR["Monitor: TSAT + ferritin"]
+    DECISION --> TREAT["Treat: phlebotomy"]
+    DECISION --> IMAGE["Investigate: hepatic MRI"]
+
+    GUIDE -.-> GAP["Genotype-Phenotype Gap"]
+    SUBSET -.-> GAP
+    GAP -.-> DECISION
+
+    classDef consensus fill:#7a9cbf,stroke:#4a6c8f,color:#fff
+    classDef emerging fill:#c4956a,stroke:#9a7550,color:#fff
+    classDef decision fill:#6b8f71,stroke:#4a6b4f,color:#fff
+    classDef gap fill:#b06272,stroke:#8a4252,color:#fff
+
+    class GENO,CONS,GUIDE,STATS consensus
+    class EMERGE,SUBSET,MODIFY,PHENO emerging
+    class DECISION,MONITOR,TREAT,IMAGE decision
+    class GAP gap
+```
+
 ## Population Prevalence
 - C282Y allele frequency: ~6.2% in Northern European populations
 - H63D allele frequency: ~14% in European populations

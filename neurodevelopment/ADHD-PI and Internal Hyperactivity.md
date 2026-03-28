@@ -23,6 +23,47 @@ permalink: neurodevelopment/adhd-pi-and-internal-hyperactivity
 
 Anthony's ADHD profile is **predominantly inattentive (ADHD-PI)** with a distinctive feature: **hyperactive internal thoughts** despite no external hyperactivity. This is not simply "quiet ADHD" — it suggests overlap with an emerging construct and specific neurobiological mechanisms.
 
+## Pathway Overview
+
+> [!info]- Colour Key
+> 🟤 Deficit | 🔵 Internal | ⚫ CDS | 🟣 Iron | 🟢 Outcome
+
+```mermaid
+flowchart TD
+    A[PFC Dopamine Deficit] --> B[Reduced Sustained Attention]
+    A --> C[CDS/SCT Overlap]
+
+    B --> D[DMN Overactivity]
+    D --> E[Internal Hyperactivity]
+    E --> F[Racing Thoughts]
+    E --> G[Cognitive Restlessness]
+
+    C --> H[Mental Fogginess]
+    C --> I[Slow Processing Speed]
+
+    J[Iron - TH Cofactor] -.-> K[Tyrosine Hydroxylase]
+    K -.-> L[Dopamine Synthesis]
+    L -.-> A
+
+    M[HFE Variants] --> N[Brain Iron Maldistribution]
+    N --> A
+
+    F --> O[BFRB Drive]
+    G --> O
+
+    classDef deficit fill:#8a5c4a,stroke:#5a3d2d,color:#fff
+    classDef internal fill:#4a7c8a,stroke:#2d4f5a,color:#fff
+    classDef cds fill:#6b6b6b,stroke:#444,color:#fff
+    classDef iron fill:#7a6a8a,stroke:#4d3f5a,color:#fff
+    classDef outcome fill:#5a7a5a,stroke:#3a4d3a,color:#fff
+
+    class A deficit
+    class B,D,E,F,G internal
+    class C,H,I cds
+    class J,K,L,M,N iron
+    class O outcome
+```
+
 ## Cognitive Disengagement Syndrome (CDS)
 
 ### What It Is

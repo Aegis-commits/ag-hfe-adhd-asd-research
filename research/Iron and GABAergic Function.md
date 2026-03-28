@@ -31,6 +31,47 @@ A leading hypothesis in autism neurobiology is that ASD involves a disturbed **e
 > - GABA deficit is increasingly recognised as central to ASD neurobiology
 > - Links GABA to sensory processing abnormalities, social cognition deficits, and repetitive behaviours
 
+> [!info]- Colour Key
+> 🔵 Normal | 🔴 Damage | 🟣 Outcome | 🟢 GABA
+
+```mermaid
+flowchart TD
+    A[Iron Status] --> B[Tyrosine Hydroxylase]
+    A --> C[Tryptophan Hydroxylase]
+    A --> D[MAO Activity]
+    B --> E[Dopamine Synthesis]
+    C --> F[Serotonin Synthesis]
+    F --> G[GABA Interneuron Modulation]
+    D --> H[Monoamine Turnover]
+
+    I[Glutamate] -->|GAD + B6| J[GABA Synthesis]
+    J --> K[Inhibitory Tone]
+
+    L[Iron Excess in Basal Ganglia] --> M[Oxidative Stress]
+    M --> N[GABAergic Neuron Damage]
+    N --> O[Reduced GABA Output]
+
+    P[Iron Deficit in Cortex] --> Q[Impaired PV+ Interneurons]
+    Q --> O
+
+    O --> R[E/I Imbalance]
+    S[Glutamate Excess] --> R
+    R --> T[Excitotoxicity]
+    T --> U[ASD Symptoms]
+    T --> V[ADHD Symptoms]
+    T --> W[Sensory Overload]
+
+    classDef normal fill:#4a7c8f,stroke:#2d4f5c,color:#fff
+    classDef damage fill:#8f4a4a,stroke:#5c2d2d,color:#fff
+    classDef outcome fill:#6b4a8f,stroke:#3f2d5c,color:#fff
+    classDef gaba fill:#4a8f5c,stroke:#2d5c3f,color:#fff
+
+    class A,B,C,D,E,F,G,H normal
+    class I,J,K gaba
+    class L,M,N,O,P,Q,S damage
+    class R,T,U,V,W outcome
+```
+
 ## How Iron Affects GABAergic Signalling
 
 Iron's relationship with GABA is **indirect but significant** at multiple levels:

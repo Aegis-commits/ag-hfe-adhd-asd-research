@@ -31,6 +31,57 @@ permalink: obsidian/research/sleep-intervention-protocols-for-au-dhd-adults
 - **C** = Pilot study, open-label trial, or strong observational evidence
 - **D** = Expert opinion, case series, or extrapolation from adjacent populations
 
+> [!info]- Colour Key
+> 🔵 Phase | 🟡 Gate
+
+```mermaid
+flowchart TD
+    subgraph P1["Phase 1 - Foundation - Weeks 1-2"]
+        HYGIENE["Sleep Hygiene"]
+        SENSORY["Sensory Environment"]
+        WAKE["Fixed Wake Time"]
+    end
+
+    GATE1{"ISI Score + Sleep Diary"}
+
+    subgraph P2["Phase 2 - Chronobiology - Weeks 2-4"]
+        MEL["Melatonin - IR + PR"]
+        CHRONO["Chronotherapy"]
+        MG["Magnesium - Evening"]
+    end
+
+    GATE2{"DLMO Shift + Sleep Latency"}
+
+    subgraph P3["Phase 3 - Behavioural - Weeks 4-8"]
+        ACT["Adapted CBT-I or ACT-i"]
+        LIGHT["Morning Bright Light"]
+    end
+
+    GATE3{"ISI + Actigraphy + Function"}
+
+    subgraph P4["Phase 4 - Medication Timing - Week 8+"]
+        ELVANSE["Elvanse Timing Shift"]
+        REVIEW["Prescriber Review"]
+    end
+
+    HYGIENE --> SENSORY --> WAKE
+    WAKE --> GATE1
+    GATE1 -->|"Still impaired"| MEL
+    MEL --> CHRONO --> MG
+    MG --> GATE2
+    GATE2 -->|"Still impaired"| ACT
+    ACT --> LIGHT
+    LIGHT --> GATE3
+    GATE3 -->|"Still impaired"| ELVANSE
+    ELVANSE --> REVIEW
+
+    classDef phase fill:#2a5a8a,stroke:#333,color:#fff
+    classDef gate fill:#8b6914,stroke:#333,color:#fff
+
+    class HYGIENE,SENSORY,WAKE,MEL,CHRONO,MG,ACT,LIGHT,ELVANSE,REVIEW phase
+    class GATE1,GATE2,GATE3 gate
+```
+
 ---
 
 ## 1. Melatonin

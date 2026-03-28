@@ -28,6 +28,46 @@ Deferiprone (DFP, Ferriprox) is the only clinically available iron chelator that
 - **Mechanism**: Binds Fe3+ in a 3:1 (ligand:iron) ratio
 - **Key property**: Can redistribute iron from overloaded tissues rather than just binding circulating iron
 
+> [!info]- Colour Key
+> 🟢 Positive | 🔴 Negative | 🔵 Decision | 🟢 First-Line | 🟠 Caution
+
+```mermaid
+flowchart TD
+    A["Brain Iron Excess Confirmed"] --> B{"Condition?"}
+
+    B -- NBIA / PKAN --> C["Deferiprone Evidence Positive"]
+    C --> D["MRI Iron Reduction"]
+    D --> E["Motor Stabilisation"]
+
+    B -- Parkinson Disease --> F["Deferiprone Evidence Positive"]
+    F --> G["Caudate and Dentate Iron Reduced"]
+    G --> H["Motor Trend Improvement"]
+
+    B -- Alzheimer Disease --> I["Deferiprone Trial Negative"]
+    I --> J["Accelerated Cognitive Decline"]
+    J --> K["Essential Iron May Be Depleted"]
+
+    B -- HFE Compound Het --> L["Phlebotomy First-Line"]
+    L --> M{"Brain Symptoms Persist?"}
+    M -- Yes --> N["Consider Brain Imaging - QSM"]
+    N --> O{"Brain Iron Excess on MRI?"}
+    O -- Yes --> P["Deferiprone - Specialist Only"]
+    O -- No --> Q["Continue Phlebotomy and Antioxidants"]
+    M -- No --> Q
+
+    classDef positive fill:#4a8,color:#fff,stroke:#276
+    classDef negative fill:#c44,color:#fff,stroke:#911
+    classDef decision fill:#58c,color:#fff,stroke:#247
+    classDef firstline fill:#396,color:#fff,stroke:#274
+    classDef caution fill:#c80,color:#fff,stroke:#964
+
+    class C,D,E,F,G,H positive
+    class I,J,K negative
+    class A,B,M,O decision
+    class L,Q firstline
+    class N,P caution
+```
+
 ## Clinical Trial Evidence
 
 ### Parkinson's Disease

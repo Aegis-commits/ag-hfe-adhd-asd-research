@@ -27,6 +27,53 @@ permalink: obsidian/genetics/hfe-compound-het-disease-associations-beyond-iron
 
 Anthony's C282Y/H63D compound heterozygosity is typically framed as "low risk" for clinical haemochromatosis. However, this genotype has documented associations with disease endpoints well beyond iron loading. This note maps every verified association using meta-analytic and cohort data.
 
+> [!info]- Colour Key
+> 🟤 HFE genotype | 🔵 Grade A evidence | 🟢 Grade B evidence | 🟠 Grade C evidence | ⚪ Disease category
+
+```mermaid
+flowchart TD
+    HFE["HFE C282Y/H63D"]
+
+    HFE --> LIVER["Liver Disease"]
+    HFE --> CANCER["Cancer"]
+    HFE --> JOINTS["Joint Disease"]
+    HFE --> NEURO["Neurodegeneration"]
+    HFE --> ENDO["Endocrine"]
+    HFE --> SKIN["Skin"]
+    HFE --> QOL["Quality of Life"]
+
+    LIVER --> HCC["HCC: HR 5.25 - Grade A"]
+    LIVER --> NAFLD["NAFLD: elevated - Grade B"]
+
+    CANCER --> CRC["Colorectal: OR 3.03 - Grade C"]
+    CANCER --> PANC["Pancreatic: elevated - Grade C"]
+
+    JOINTS --> OA["OA polyarticular - Grade B"]
+    JOINTS --> MCP["MCP pattern - Grade B"]
+
+    NEURO --> ALS["ALS: 13% increase - Grade B"]
+    NEURO --> GLUT["Glutamate toxicity - Grade C"]
+
+    ENDO --> HYPO["Hypogonadism - Grade C"]
+    ENDO --> DM["Diabetes risk - Grade C"]
+
+    SKIN --> PCT["PCT: OR 8.1 - Grade A"]
+
+    QOL --> FATIGUE["Fatigue + cognitive - Grade A"]
+
+    classDef centre fill:#8b5e3c,stroke:#6b3e1c,color:#fff
+    classDef gradeA fill:#4a6fa5,stroke:#2d4a7a,color:#fff
+    classDef gradeB fill:#6b8f71,stroke:#4a6b4f,color:#fff
+    classDef gradeC fill:#b07d62,stroke:#8a5d42,color:#fff
+    classDef category fill:#7a7a8a,stroke:#5a5a6a,color:#fff
+
+    class HFE centre
+    class HCC,NAFLD,PCT,FATIGUE gradeA
+    class OA,MCP,ALS gradeB
+    class CRC,PANC,GLUT,HYPO,DM gradeC
+    class LIVER,CANCER,JOINTS,NEURO,ENDO,SKIN,QOL category
+```
+
 ## The Definitive Meta-Analysis: 31 Disease Endpoints
 
 **Ellervik C et al.** "Hemochromatosis genotypes and risk of 31 disease endpoints: meta-analyses including 66,000 cases and 226,000 controls." *Hepatology* 2007;46(4):1071-80. PMID: [17828789](https://pubmed.ncbi.nlm.nih.gov/17828789/)

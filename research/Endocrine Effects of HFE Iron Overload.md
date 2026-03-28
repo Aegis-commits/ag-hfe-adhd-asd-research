@@ -37,6 +37,55 @@ permalink: research/endocrine-effects-hfe-iron-overload
 
 ---
 
+> [!info]- Colour Key
+> 🟡 Iron | 🔴 Damage | 🟣 Outcome | 🟢 Protective
+
+```mermaid
+flowchart TD
+    A[HFE Iron Overload] --> B[Iron Deposition in Endocrine Glands]
+
+    B --> C[Anterior Pituitary]
+    B --> D[Thyroid]
+    B --> E[Pancreatic Beta-Cells]
+
+    C --> F[Gonadotroph Damage]
+    F --> G[Low LH / FSH]
+    G --> H[Low Testosterone]
+    H --> I[Fatigue + Cognitive Fog]
+
+    C --> J[Thyrotroph Damage - Rare]
+    J --> K[Central Hypothyroidism]
+
+    D --> L[Thyrocyte Iron Loading]
+    L --> M[Subclinical Hypothyroidism]
+
+    E --> N[Beta-Cell Oxidative Stress]
+    N --> O[Insulin Resistance]
+    O --> P[Glucose Intolerance]
+
+    H --> Q[Low Hepcidin]
+    Q --> R[More Iron Absorption]
+    R --> A
+
+    S[Phlebotomy] -.-> T{Age at Treatment}
+    T -->|Under 40| U[Hormone Recovery Likely]
+    T -->|Over 40| V[Recovery Unlikely]
+    S -.-> W[Improved Insulin Sensitivity]
+    S -.-> X[Possible Thyroid Recovery]
+
+    classDef iron fill:#8f7a4a,stroke:#5c4f2d,color:#fff
+    classDef damage fill:#8f4a4a,stroke:#5c2d2d,color:#fff
+    classDef outcome fill:#6b4a8f,stroke:#3f2d5c,color:#fff
+    classDef protect fill:#4a8f5c,stroke:#2d5c3f,color:#fff
+    classDef warn fill:#8f4a4a,stroke:#5c2d2d,color:#fff
+
+    class A,B iron
+    class C,D,E,F,G,J,L,N damage
+    class H,I,K,M,O,P,Q,R outcome
+    class S,T,U,W,X protect
+    class V warn
+```
+
 ## 1. Iron Overload and Hypogonadism
 
 Hypogonadotropic hypogonadism is the most common non-diabetic endocrinopathy in hereditary haemochromatosis. Iron deposits selectively in gonadotropic cells of the anterior pituitary, suppressing LH and FSH secretion, leading to low testosterone.

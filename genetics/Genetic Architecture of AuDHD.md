@@ -25,6 +25,64 @@ permalink: genetics/genetic-architecture-of-au-dhd-1
 
 Anthony's conditions (AuDHD, trichotillomania, HFE compound heterozygosity) intersect at multiple genetic levels. This note maps the key genetic pathways and their interactions.
 
+> [!info]- Colour Key
+> 🔵 Genetic locus | 🟢 Molecular pathway | 🟤 Phenotype
+
+```mermaid
+flowchart TD
+    subgraph Loci["Genetic Loci"]
+        COMT["COMT Val158Met"]
+        MTHFR["MTHFR C677T/A1298C"]
+        SLC6A3["SLC6A3 / DAT1"]
+        HFE["HFE C282Y/H63D"]
+        SLC6A4["SLC6A4 / 5-HTTLPR"]
+        SAPAP3["SAPAP3 / SLITRK1"]
+    end
+
+    subgraph Pathways["Molecular Pathways"]
+        DA["Dopamine"]
+        SE["Serotonin"]
+        GL["Glutamate"]
+        FE["Iron homeostasis"]
+        ME["Methylation / SAMe"]
+    end
+
+    subgraph Phenotypes["Clinical Phenotypes"]
+        ADHD["ADHD-PI"]
+        ASD["Autism"]
+        TTM["Trichotillomania"]
+    end
+
+    COMT --> DA
+    SLC6A3 --> DA
+    MTHFR --> ME
+    HFE --> FE
+    SLC6A4 --> SE
+    SAPAP3 --> GL
+
+    ME --> DA
+    ME --> SE
+    FE --> DA
+    FE --> GL
+    HFE --> GL
+
+    DA --> ADHD
+    DA --> ASD
+    SE --> ASD
+    SE --> TTM
+    GL --> TTM
+    GL --> ASD
+    FE --> ADHD
+
+    classDef locus fill:#4a6fa5,stroke:#2d4a7a,color:#fff
+    classDef pathway fill:#6b8f71,stroke:#4a6b4f,color:#fff
+    classDef pheno fill:#b07d62,stroke:#8a5d42,color:#fff
+
+    class COMT,MTHFR,SLC6A3,HFE,SLC6A4,SAPAP3 locus
+    class DA,SE,GL,FE,ME pathway
+    class ADHD,ASD,TTM pheno
+```
+
 ## HFE Variants and Neurodevelopment
 
 ### Beyond Iron Loading

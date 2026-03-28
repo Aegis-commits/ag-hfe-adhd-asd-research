@@ -24,6 +24,54 @@ permalink: neurodevelopment/gut-brain-axis-and-neurodevelopment
 
 Anthony has **no known gut issues** — but that doesn't mean his gut is uninvolved. Many gut-brain axis disruptions are subclinical, and his iron overload directly affects gut microbiome composition. The gut produces ~90% of the body's serotonin, and serotonin dysregulation is implicated in all three of his neurodevelopmental conditions.
 
+## Pathway Overview
+
+> [!info]- Colour Key
+> 🟤 Iron | 🔵 Gut | 🟣 Pathway | ⚫ Outcome | 🟢 Vagus / therapy
+
+```mermaid
+flowchart TD
+    A[Iron Overload] --> B[Gut Dysbiosis]
+
+    B --> C[Inflammation]
+    B --> D[LPS Translocation]
+    B --> E[Reduced SCFA Production]
+
+    C --> F[IDO Activation]
+    F --> G[Kynurenine Shunt]
+    G --> H[Serotonin Depletion]
+    G --> I[Quinolinic Acid]
+    I --> J[Glutamate Excitotoxicity]
+
+    D --> K[Neuroinflammation]
+
+    E --> L[Impaired Gut Barrier]
+    L --> D
+
+    H --> M[Worsened TTM/Mood/Sleep]
+    K --> M
+    J --> N[Repetitive Behaviours]
+
+    V[Vagus Nerve] <--> O[Gut Microbiome]
+    V <--> Q[Brain Function]
+
+    P[Phlebotomy] -.-> A
+
+    classDef iron fill:#8a5c4a,stroke:#5a3d2d,color:#fff
+    classDef gut fill:#4a7c8a,stroke:#2d4f5a,color:#fff
+    classDef pathway fill:#7a6a8a,stroke:#4d3f5a,color:#fff
+    classDef outcome fill:#6b6b6b,stroke:#444,color:#fff
+    classDef vagus fill:#5a7a5a,stroke:#3a4d3a,color:#fff
+    classDef therapy fill:#4a8a6a,stroke:#2d5a42,color:#fff
+
+    class A iron
+    class B,E,L gut
+    class C,D,F,G,H,I,J,K pathway
+    class M,N outcome
+    class V,O,Q vagus
+    class P therapy
+```
+
 ## The Gut Microbiome in Autism
 
 ### Dysbiosis Patterns

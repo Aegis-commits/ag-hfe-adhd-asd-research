@@ -24,6 +24,39 @@ permalink: symptoms/arthropathy-and-back-pain
 ## Your Symptom
 Aching lower back — persistent. In context of [[HFE Compound Heterozygosity|C282Y/H63D compound heterozygosity]], prior ferritin ~700 ug/L, and current [[Transferrin Saturation - Clinical Significance|TSAT 60%]].
 
+## Pathogenesis Overview
+
+> [!info]- Colour Key
+> 🟠 Risk | 🔵 Mechanism | 🔴 Outcome | 🟢 Sentinel
+
+```mermaid
+flowchart TD
+    A[HFE Iron Overload] --> B[Iron Deposition in Joints]
+    B --> C[Chondrocyte Damage]
+    B --> D[CPPD Crystal Nucleation]
+    C --> E[Cartilage Degradation]
+    D --> E
+    E --> F[Secondary Osteoarthritis]
+    B --> G[Synovial ROS Production]
+    G --> C
+
+    H[C282Y Homozygote] -->|high risk| A
+    I[C282Y/H63D Compound Het] -->|moderate risk| A
+
+    J[MCP 2nd/3rd Joints] --- K[Sentinel Sign]
+    F --> J
+
+    classDef risk fill:#c96,stroke:#633,color:#000
+    classDef mechanism fill:#69a,stroke:#346,color:#000
+    classDef outcome fill:#966,stroke:#633,color:#000
+    classDef sentinel fill:#6a9,stroke:#364,color:#000
+
+    class H,I risk
+    class B,C,D,G mechanism
+    class E,F outcome
+    class J,K sentinel
+```
+
 ## Haemochromatosis Arthropathy — Overview
 
 Joint disease is one of the most common and earliest manifestations of genetic haemochromatosis. It often **precedes diagnosis by years** and can occur even in compound heterozygotes with modest iron loading.

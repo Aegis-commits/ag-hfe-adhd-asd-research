@@ -21,6 +21,56 @@ permalink: minerals/copper-zinc-iron-interactions
 
 # Copper-Zinc-Iron Interactions
 
+## Interaction Map
+
+> [!info]- Colour Key
+> 🟠 Iron | 🔵 Copper | 🟢 Zinc | 🔴 Outcome | 🟤 Transporter
+
+```mermaid
+flowchart TD
+    subgraph Absorption
+        DMT1[DMT1 Transporter]
+        Fe[Iron Fe2+] -->|competes| DMT1
+        Cu[Copper Cu2+] -->|competes| DMT1
+        Zn[Zinc Zn2+] -->|competes| DMT1
+    end
+
+    subgraph Iron Overload Effects
+        IO[Iron Overload] -->|suppresses| CuAbs[Copper Absorption]
+        IO -->|suppresses| ZnAbs[Zinc Absorption]
+    end
+
+    subgraph Low Copper Cascade
+        LowCu[Low Copper] --> LowCp[Low Ceruloplasmin]
+        LowCp --> IronTrapping[Iron Trapped in Tissue]
+        LowCu --> LowDBH[Impaired DBH]
+        LowDBH --> LowNE[Low Norepinephrine]
+    end
+
+    subgraph Low Zinc Cascade
+        LowZn[Low Zinc] --> NMDA[NMDA Dysfunction]
+        LowZn --> SHANK[SHANK Protein Deficit]
+        NMDA --> NeuroCog[Neurocognitive Impact]
+        SHANK --> NeuroCog
+    end
+
+    CuAbs --> LowCu
+    ZnAbs --> LowZn
+    IronTrapping --> IO
+
+    classDef iron fill:#c96,stroke:#633,color:#000
+    classDef copper fill:#69a,stroke:#346,color:#000
+    classDef zinc fill:#6a9,stroke:#364,color:#000
+    classDef outcome fill:#966,stroke:#633,color:#000
+    classDef transporter fill:#999,stroke:#444,color:#000
+
+    class Fe,IO,IronTrapping iron
+    class Cu,CuAbs,LowCu,LowCp,LowDBH copper
+    class Zn,ZnAbs,LowZn,SHANK zinc
+    class LowNE,NeuroCog,NMDA outcome
+    class DMT1 transporter
+```
+
 ## Your Mineral Profile
 
 From [[Blood Results - March 2026]]:

@@ -38,6 +38,50 @@ This note consolidates evidence from PubMed and OpenAlex on whether HFE variants
 
 ---
 
+> [!info]- Colour Key
+> 🟡 HFE | 🔴 Risk | 🔵 Evidence | 🟢 Protective
+
+```mermaid
+flowchart TD
+    A[HFE C282Y/H63D] --> B[Elevated TSAT / Ferritin]
+    B --> C[Brain Iron Accumulation]
+    C --> D[Basal Ganglia]
+    C --> E[Substantia Nigra]
+    C --> F[Hippocampus]
+
+    D --> G[Parkinson Disease Risk]
+    E --> G
+    G -->|No association - meta-analyses| G1[Population-level risk]
+
+    F --> H[Alzheimer Disease Risk]
+    H -->|Mixed evidence| H1[Oxidative amplifier if pathology exists]
+
+    D --> I[ALS Risk]
+    I -->|Not replicated at scale| I1[Population-level risk]
+
+    C --> J[NBIA Differential]
+    J -->|Different genes - not HFE| J1[Not elevated]
+
+    K[Neuroprotective Strategy] -.-> L[Phlebotomy: TSAT target under 45%]
+    K -.-> M[Aerobic Exercise: 150+ min/wk]
+    K -.-> N[Baseline Brain QSM]
+    K -.-> O[Metabolic Risk Management]
+
+    P[Iron Chelation] -->|Worsened outcomes in RCTs| P1[Do Not Use]
+
+    classDef hfe fill:#8f7a4a,stroke:#5c4f2d,color:#fff
+    classDef risk fill:#8f4a4a,stroke:#5c2d2d,color:#fff
+    classDef evidence fill:#4a7c8f,stroke:#2d4f5c,color:#fff
+    classDef protect fill:#4a8f5c,stroke:#2d5c3f,color:#fff
+    classDef warn fill:#8f4a4a,stroke:#5c2d2d,color:#fff
+
+    class A,B,C,D,E,F hfe
+    class G,H,I,J risk
+    class G1,H1,I1,J1 evidence
+    class K,L,M,N,O protect
+    class P,P1 warn
+```
+
 ## 1. HFE Variants and Parkinson's Disease Risk
 
 ### Key Finding Summary

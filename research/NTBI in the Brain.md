@@ -23,6 +23,43 @@ permalink: research/ntbi-in-the-brain
 
 The existing note on [[Iron Overload and NTBI]] covers systemic NTBI. This note focuses specifically on whether and how NTBI reaches the brain, and what happens when it does.
 
+> [!info]- Colour Key
+> 🔴 Pathological | 🟠 Vulnerable | 🔵 Neutral
+
+```mermaid
+flowchart TD
+    A["TSAT Above 45%"] --> B["NTBI in Circulation"]
+    B --> C["Reaches BBB"]
+    C --> D["Non-Regulated Uptake"]
+    D --> E["ZIP8 / ZIP14 / DMT1"]
+    E --> F["Iron Enters Neurons and Glia"]
+    F --> G["Fenton Chemistry"]
+    G --> H["ROS Generation"]
+    H --> I["Regional Vulnerability"]
+
+    I --> J["Substantia Nigra"]
+    I --> K["Basal Ganglia"]
+    I --> L["Hippocampus"]
+
+    F --> M["CSF Tf 100% Saturated"]
+    M --> N["Zero Buffering Capacity"]
+    N --> O["Free Iron Immediately Toxic"]
+    O --> G
+
+    H --> P["Ferroptosis"]
+    H --> Q["Neuroinflammation"]
+    Q --> R["More Iron Retention"]
+    R --> F
+
+    classDef pathological fill:#c44,color:#fff,stroke:#911
+    classDef vulnerable fill:#c80,color:#fff,stroke:#964
+    classDef neutral fill:#58c,color:#fff,stroke:#247
+
+    class A,B,G,H,O,P,Q,R pathological
+    class J,K,L vulnerable
+    class C,D,E,F,I,M,N neutral
+```
+
 ## Does NTBI Cross the Blood-Brain Barrier?
 
 **Yes, but slowly and via specific mechanisms.**

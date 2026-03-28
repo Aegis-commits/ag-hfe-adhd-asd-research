@@ -28,6 +28,47 @@ Three pathological processes converge in autism spectrum disorder:
 
 Iron sits at the intersection of all three — it generates ROS via Fenton chemistry, depletes antioxidant defences, and damages mitochondria.
 
+> [!info]- Colour Key
+> 🔵 Normal | 🔴 Damage | 🟢 Protective | 🟡 Warning
+
+```mermaid
+flowchart TD
+    A[Iron Overload] --> B[Fenton Reaction]
+    B --> C[Hydroxyl Radicals / ROS]
+    C --> D[GSH Consumption]
+    D --> E[Glutathione Depletion]
+    C --> F[Mitochondrial ETC Damage]
+    F --> G[More ROS Leakage]
+    G --> C
+
+    E --> H[Oxidative Damage]
+    H --> I[Lipid Peroxidation]
+    H --> J[Protein Oxidation]
+    H --> K[DNA Damage]
+
+    A --> L[Nrf2 Activation Attempt]
+    L --> M{Nrf2 Functional?}
+    M -->|Yes| N[Antioxidant Genes]
+    N --> O[Ferritin Upregulation]
+    N --> P[Ferroportin Upregulation]
+    N --> Q[HO-1 Induction]
+    O -.-> R[Iron Sequestration]
+    P -.-> S[Iron Export]
+
+    M -->|Impaired in ASD| T[Failed Compensation]
+    T --> U[Labile Iron Persists]
+    U --> C
+
+    classDef normal fill:#4a7c8f,stroke:#2d4f5c,color:#fff
+    classDef damage fill:#8f4a4a,stroke:#5c2d2d,color:#fff
+    classDef protect fill:#4a8f5c,stroke:#2d5c3f,color:#fff
+    classDef warn fill:#8f7a4a,stroke:#5c4f2d,color:#fff
+
+    class A,B,C,D,E,F,G normal
+    class H,I,J,K,T,U damage
+    class L,M,N,O,P,Q,R,S protect
+```
+
 ## Glutathione Depletion
 
 Glutathione (GSH) is the brain's primary antioxidant. Its synthesis depends on the enzyme **glutamate-cysteine ligase (GCL)**, and iron status affects this pathway at multiple points.

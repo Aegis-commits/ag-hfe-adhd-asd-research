@@ -28,6 +28,45 @@ This review addresses the safety and mechanistic interactions of **N-acetylcyste
 - Intended use for [[Trichotillomania and Neurodevelopmental Links|trichotillomania]] and oxidative stress reduction
 - Concurrent concerns about [[Iron Overload and NTBI|NTBI]] and [[Ferroptosis and Neuronal Iron|ferroptosis]]
 
+> [!info]- Colour Key
+> 🟢 Protective | 🔵 Mechanism | 🟢 Evidence | 🟢 Outcome
+
+```mermaid
+flowchart TD
+    A["NAC"] --> B["GSH Restoration"]
+    A --> C["Direct Iron Chelation - Weak"]
+    A --> D["Cysteine Supply"]
+
+    B --> E["GPX4 Activity Maintained"]
+    E --> F["Ferroptosis Defence"]
+
+    C --> G["NTBI Reduction"]
+    G --> H["Reduced Fenton Chemistry"]
+
+    D --> I["Bypasses System Xc-"]
+    I --> J["Reduced Glutamate Release"]
+    J --> K["Less Excitotoxicity"]
+
+    L["Thalassemia RCT Evidence"] -.-> M["Safe in Iron Overload"]
+    L -.-> N["Reduced Oxidative Stress"]
+    L -.-> O["Fewer Adverse Events"]
+
+    F --> P["Neuroprotection"]
+    H --> P
+    K --> P
+
+    classDef protective fill:#4a8,color:#fff,stroke:#276
+    classDef mechanism fill:#58c,color:#fff,stroke:#247
+    classDef evidence fill:#7a5,color:#fff,stroke:#463
+    classDef outcome fill:#396,color:#fff,stroke:#274
+
+    class A protective
+    class B,C,D,E,G,I mechanism
+    class F,H,J,K protective
+    class L,M,N,O evidence
+    class P outcome
+```
+
 ---
 
 ## 1. NAC as Iron Chelator

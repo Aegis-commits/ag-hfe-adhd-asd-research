@@ -26,6 +26,65 @@ permalink: obsidian/research/exercise-as-medicine-for-au-dhd-hfe-1
 
 **Related notes:** [[Copper-Iron-Dopamine Triangle]] | [[Hepcidin and Brain Iron Regulation]] | [[Iron and OCD-Spectrum Repetitive Behaviours]] | [[Poor Sleep and AuDHD-HFE Interactions]]
 
+> [!info]- Colour Key
+> 🟢 Exercise | 🔵 Protective | 🟤 Barrier
+
+```mermaid
+flowchart TD
+    EX["Regular Exercise"]
+
+    subgraph Iron["Iron Regulation"]
+        HEP["Hepcidin Increase"]
+        REDIST["Iron Redistribution"]
+    end
+
+    subgraph Neuro["Neuroprotection"]
+        BDNF["BDNF Increase"]
+        NEUROGEN["Neurogenesis"]
+    end
+
+    subgraph Catechol["Catecholamine Boost"]
+        DA_NE["Dopamine + Norepinephrine"]
+        ADHD_RELIEF["ADHD Symptom Relief"]
+    end
+
+    subgraph GutHealth["Gut Health"]
+        MICROB["Microbiome Diversity"]
+        SCFA["SCFA Production"]
+    end
+
+    subgraph SleepBenefit["Sleep Quality"]
+        LATENCY["Reduced Sleep Latency"]
+        QUALITY["Improved Architecture"]
+    end
+
+    subgraph Barriers["AuDHD-Specific Barriers"]
+        FATIGUE["Fatigue - HFE + Burnout"]
+        SENSORY_B["Sensory Overload - Gyms"]
+        EXEC_B["Executive Dysfunction"]
+        MOTIV["Low Motivation - Dopamine"]
+    end
+
+    EX --> HEP --> REDIST
+    EX --> BDNF --> NEUROGEN
+    EX --> DA_NE --> ADHD_RELIEF
+    EX --> MICROB --> SCFA
+    EX --> LATENCY --> QUALITY
+
+    EX -.-> FATIGUE
+    EX -.-> SENSORY_B
+    EX -.-> EXEC_B
+    EX -.-> MOTIV
+
+    classDef exercise fill:#2d6a2e,stroke:#333,color:#fff
+    classDef protective fill:#2a5a8a,stroke:#333,color:#fff
+    classDef barrier fill:#8b4513,stroke:#333,color:#fff
+
+    class EX exercise
+    class HEP,REDIST,BDNF,NEUROGEN,DA_NE,ADHD_RELIEF,MICROB,SCFA,LATENCY,QUALITY protective
+    class FATIGUE,SENSORY_B,EXEC_B,MOTIV barrier
+```
+
 ---
 
 ## Evidence Ratings Key
