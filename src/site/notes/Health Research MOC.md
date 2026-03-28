@@ -133,30 +133,24 @@ flowchart TD
     classDef out fill:#f7dc6f,stroke:#b7950b,color:#1a1400
 
     A[HFE C282Y / H63D]:::gen --> B[Iron Overload]:::iron
-
-    B --> C[NTBI / Oxidative Stress]:::iron
-    B --> D[Suppressed Cu / Zn]:::iron
+    B --> C[NTBI + Oxidative Stress]:::iron
     B --> I[Brain Iron]:::iron
     B --> N[Gut Dysbiosis]:::iron
-    B --> AW[Pituitary Iron]:::iron
 
     C --> E[Fatigue + Joint Damage]:::out
     C --> GSH[GSH Depletion]:::iron
     GSH --> FPT[Ferroptosis]:::out
     GSH --> GLU[Glutamate Excess]:::out
 
-    D --> ADHD[ADHD Symptoms]:::out
-    D --> ASD[Autism Symptoms]:::out
-
+    I --> ADHD[ADHD Symptoms]:::out
     I --> TTM[Trichotillomania]:::out
-    I --> ADHD
-    I --> INT[Low Interoception]:::out
+    I --> ASD[Autism Symptoms]:::out
 
     N --> KYN[Kynurenine Shunt]:::iron
     KYN --> TTM
     KYN --> SLP[Poor Sleep]:::out
 
-    AW --> TEST[Low Testosterone]:::out
+    B --> TEST[Low Testosterone]:::out
 ```
 
 ### 2. Sleep as Central Amplifier
