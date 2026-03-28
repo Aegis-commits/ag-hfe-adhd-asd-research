@@ -1,0 +1,34 @@
+# Obsidian internals
+.obsidian/
+
+# Obsidian trash
+.trash/
+
+# Vault workflow / tooling notes (not research)
+Claude Code Vault Workflow Template.md
+Plugin Setup - Claude + Obsidian.md
+research/Claude Code + Obsidian - Comprehensive Research.md
+
+# Templates (not publishable content)
+Templates/
+
+# MOC auto-generated indexes (not core research)
+MOCs/
+
+# Daily notes (private)
+Daily/
+
+# References (internal tooling)
+references/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Raw uploaded files (sensitive data pre-redaction)
+Anthony_Granfield_Health_Results_Dec2025.md
+
+# Claude Code config
+CLAUDE.md
+.mcp.json
