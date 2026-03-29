@@ -51,6 +51,7 @@ flowchart TD
 - Burnout pattern
 - ADHD + autism baseline neurocognitive load
 - Concurrent iron dysregulation (TSAT 60%, previous ferritin ~700)
+- **General body aches** (arms, shoulders, hands, back) that worsen significantly after consecutive nights of poor sleep — see [[Arthropathy and Back Pain#Sleep Deprivation and Pain Amplification|sleep-pain amplification]]
 
 ## Plausible Overlapping Drivers
 1. **Iron-overload toxicity pathway**

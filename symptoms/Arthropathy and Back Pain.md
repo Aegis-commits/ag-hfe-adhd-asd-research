@@ -21,8 +21,12 @@ permalink: symptoms/arthropathy-and-back-pain
 
 # Arthropathy and Back Pain
 
-## Your Symptom
-Aching lower back — persistent. In context of [[HFE Compound Heterozygosity|C282Y/H63D compound heterozygosity]], prior ferritin ~700 ug/L, and current [[Transferrin Saturation - Clinical Significance|TSAT 60%]].
+## Your Symptoms
+- **Aching lower back** — persistent
+- **General body aches** — arms, shoulders, hands; widespread rather than localised to classic MCP joints alone
+- **Sleep-pain interaction** — aches feel noticeably worse after consecutive nights of poor sleep (a few hours per night)
+
+In context of [[HFE Compound Heterozygosity|C282Y/H63D compound heterozygosity]], prior ferritin ~700 ug/L, and current [[Transferrin Saturation - Clinical Significance|TSAT 60%]].
 
 ## Pathogenesis Overview
 
@@ -115,6 +119,24 @@ Iron deposition in the spine is less studied than hands/wrists but documented:
 - Lumbar disc degeneration can be accelerated
 - Facet joint involvement possible
 - Iron deposition in paraspinal muscles contributes to stiffness
+
+### Widespread Aches Beyond the Classic Pattern
+Your symptom distribution (arms, shoulders, hands, back) is broader than the classic MCP-focused haemochromatosis arthropathy. Several mechanisms may explain this:
+
+- **Systemic iron-driven inflammation** — elevated hepcidin-independent iron absorption can drive low-grade systemic inflammation and oxidative stress in muscles and connective tissue, not just joints
+- **Myalgia as an HFE symptom** — generalised body aches and muscle pain are reported by haemochromatosis patients and are often under-recognised compared to joint-specific arthropathy
+- **Iron deposition in tendons/entheses** — iron can deposit in soft tissue structures beyond cartilage, contributing to shoulder and arm symptoms
+
+### Sleep Deprivation and Pain Amplification
+The pattern of worsening aches after consecutive poor nights is well-documented:
+
+- **Sleep loss lowers pain thresholds** — even partial sleep deprivation (a few hours per night for 2-3 nights) reduces pain tolerance by 15-25% and amplifies existing pain signals
+- **Neuroinflammatory cascade** — sleep deprivation increases pro-inflammatory cytokines (IL-6, TNF-alpha, CRP), which compound any iron-driven inflammation already present
+- **Central sensitisation** — chronic poor sleep can cause the CNS to amplify pain signals (central sensitisation), making existing musculoskeletal issues feel disproportionately worse
+- **AuDHD sleep vulnerability** — [[research/Poor Sleep and AuDHD-HFE Interactions|sleep disruption is common in AuDHD]], creating a recurring cycle: poor sleep → increased pain → increased stress → worse sleep
+
+> [!warning] Compounding Loop
+> Iron overload inflammation + sleep deprivation inflammation = amplified pain that is greater than either factor alone. Improving sleep quality may meaningfully reduce pain perception even without addressing the iron component.
 
 ### Other Contributing Factors in Your Case
 - **Sedentary patterns from ADHD executive dysfunction** — prolonged sitting
