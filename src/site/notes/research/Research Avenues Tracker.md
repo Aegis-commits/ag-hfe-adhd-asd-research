@@ -31,6 +31,7 @@
 | 3 | ADHD-PI with internal hyperactivity / CDS overlap | B | Direct — his presentation | Complete |
 | 4 | Stimulant-mediated autistic unmasking | C | Direct — his experience | Complete |
 | 5 | Masking/camouflaging cognitive cost and burnout | B | Direct — fatigue driver | Complete |
+| 77 | ADHD heterogeneity — temperament, cognitive, and neurobiological subtypes | B | Direct — ADHD-PI + AuDHD + HFE creates unique profile | Complete |
 
 ### Trichotillomania / BFRBs
 
@@ -205,6 +206,7 @@
 | 74 | Autistic burnout — neurobiological mechanisms | Raymaker framework; camouflaging → hair cortisol elevation; AuDHD double-hit; skill regression model | [[neurodevelopment/Autistic Burnout - Neurobiological Mechanisms\|neurodevelopment/Autistic Burnout - Neurobiological Mechanisms]] |
 | 75 | Mineral rebalancing during phlebotomy | Bolann: Cu improves, Zn does NOT; active zinc supplementation needed; phased vitamin C reintroduction | [[research/Mineral Rebalancing During Phlebotomy\|research/Mineral Rebalancing During Phlebotomy]] |
 | 76 | Sensory processing, neuroinflammation, and iron | Iron disrupts E/I balance via PV+ interneurons and GAD; thalamic gating impairment; sensory-stress-iron feedback loop | [[neurodevelopment/Sensory Processing and Iron in Autism\|neurodevelopment/Sensory Processing and Iron in Autism]] |
+| 77 | ADHD heterogeneity mapping | DSM presentations unstable; Karalunas temperament profiles (mild/surgent/irritable) biologically validated; triple cognitive pathway model; iron-ADHD paradox (deficiency research vs. Anthony's overload) | [[research/ADHD Heterogeneity - Mapping the Many ADHDs\|research/ADHD Heterogeneity - Mapping the Many ADHDs]] |
 
 ---
 
